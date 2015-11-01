@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Intro-Regular";
+  src: url('../../../fonts/Intro-Regular.ttf?1435307129') format('truetype');
+}
 .topline__container, .header__container, .nav__container, .main__container, .footer__container {
   max-width: 1200px;
   margin-left: auto;
@@ -7,6 +11,28 @@
   content: " ";
   display: block;
   clear: both;
+}
+
+.header__title {
+  margin-top: 1.5em;
+}
+.header__title a {
+  text-transform: uppercase;
+  font-family: "Intro-Regular", Helvetica, Arial, sans-serif;
+}
+.header__title a:hover {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+.header__slogan {
+  margin-bottom: 1.5em;
+  font-size: 21px;
+  color: #9c9c9c;
+  font-weight: normal;
+}
+
+.main__container {
+  background: #171717;
 }
 
 .content {

@@ -2,6 +2,8 @@
 @import 'breakpoint';
 @import 'susy';
 
+@import '../../utils/_colors.scss';
+@import '../../utils/_fonts.scss';
 @import '../../utils/_grid.scss';
 
 .topline {
@@ -14,6 +16,23 @@
   &__container {
     @extend %container;
   }
+  &__title {
+    @include leader;
+    a {
+      text-transform: uppercase;
+      font-family: $intro-regular;
+      &:hover {
+        text-decoration: none;
+        color: darken($link-default, 15%);
+      }
+    }
+  }
+  &__slogan {
+    @include trailer;
+    font-size: 21px;
+    color: $text-medium;
+    font-weight: normal;
+  }
 }
 
 .nav {
@@ -25,6 +44,7 @@
 .main {
   &__container {
     @extend %container;
+    background: $bg-content;
   }
 }
 

@@ -16,6 +16,10 @@ video {
   height: auto;
 }
 
+@font-face {
+  font-family: "Intro-Regular";
+  src: url('../fonts/Intro-Regular.ttf?1435307129') format('truetype');
+}
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -431,6 +435,19 @@ html {
   line-height: 1.5em;
 }
 
+body {
+  background: #0e0e0e url('../images/body.jpg?1358697891') center top repeat-x;
+  color: #373737;
+}
+
+a {
+  color: #d6d6d6;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 24px;
@@ -448,6 +465,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  color: #9c9c9c;
 }
 
 h1 {

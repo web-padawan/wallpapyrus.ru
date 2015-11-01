@@ -10,21 +10,24 @@
 
   <header class="header">
     <div class="header__container">
+
+      <?php if ($site_name): ?>
+        <div class="header__title">
+          <h1>
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+              <span><?php print $site_name; ?></span>
+            </a>
+          </h1>
+        </div>
+      <?php endif; ?>
+
+        <?php if ($site_slogan): ?>
+          <div class="header__slogan"><?php print $site_slogan; ?></div>
+        <?php endif; ?>
+
       <div class="branding">
         <?php if ($logo): ?>
           <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-        <?php endif; ?>
-
-        <?php if ($site_name || $site_slogan): ?>
-          <?php if ($site_name): ?>
-            <h1 class="site-name">
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-            </h1>
-          <?php endif; ?>
-
-          <?php if ($site_slogan): ?>
-            <h2 class="site-slogan"><?php print $site_slogan; ?></h2>
-          <?php endif; ?>
         <?php endif; ?>
 
         <?php print render($page['branding']); ?>
