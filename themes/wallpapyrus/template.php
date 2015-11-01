@@ -12,3 +12,12 @@
 function wallpapyrus_omega_layout_alter(&$layout) {
 
 }
+
+/**
+ * Implements THEME_preprocess_node().
+ */
+function wallpapyrus_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  $variables['date'] = format_date($node->created, 'custom', 'd.m.Y');
+  $variables['submitted'] = t('Добавлено: !datetime', array('!datetime' => $variables['date']));
+}
