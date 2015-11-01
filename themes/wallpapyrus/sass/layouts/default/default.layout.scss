@@ -28,6 +28,14 @@
   }
 }
 
+.content {
+  @include span(8 of 12);
+}
+
+.sidebar {
+  @include span(last 4 of 12);
+}
+
 .footer {
   &__container {
     @extend %container;

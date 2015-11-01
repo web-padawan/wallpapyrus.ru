@@ -64,8 +64,9 @@
         <?php print $feed_icons; ?>
       </div>
 
-      <?php print render($page['sidebar_first']); ?>
-      <?php print render($page['sidebar_second']); ?>
+      <aside class="sidebar">
+        <?php print render($page['sidebar']); ?>
+      </aside>
     </div>
   </div>
 
