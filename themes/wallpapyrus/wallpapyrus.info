@@ -8,7 +8,7 @@ core = 7.x
 ; ========================================
 ; Stylesheets
 ; ========================================
-stylesheets[all][] = css/app.min.css
+stylesheets[all][] = css/wallpapyrus.styles.css
 
 ; ========================================
 ; Scripts
@@ -35,8 +35,8 @@ regions[footer] = Footer
 ; Settings
 ; ========================================
 settings[toggle_logo] = 0
-settings[toggle_name] = 0
-settings[toggle_slogan] = 0
+settings[toggle_name] = 1
+settings[toggle_slogan] = 1
 settings[toggle_node_user_picture] = 0
 settings[toggle_comment_user_picture] = 0
 settings[toggle_comment_user_verification] = 0
@@ -52,9 +52,9 @@ settings[favicon_path] = ""
 settings[favicon_upload] = ""
 settings[omega_enable_warning] = 1
 settings[omega_toggle_extension_layouts] = 1
-settings[omega_layout] = general
+settings[omega_layout] = default
 settings[omega_toggle_extension_development] = 1
-settings[omega_enable_export_reminder] = 1
+settings[omega_enable_export_reminder] = 0
 settings[omega_rebuild_theme_registry] = 0
 settings[omega_rebuild_aggregates] = 0
 settings[omega_browser_width_indicator] = 0
@@ -69,11 +69,10 @@ settings[omega_demo_regions_list][navigation] = navigation
 settings[omega_demo_regions_list][highlighted] = highlighted
 settings[omega_demo_regions_list][help] = help
 settings[omega_demo_regions_list][content] = content
-settings[omega_demo_regions_list][sidebar_first] = sidebar_first
-settings[omega_demo_regions_list][sidebar_second] = sidebar_second
 settings[omega_demo_regions_list][footer] = footer
 settings[omega_demo_regions_list][topline] = 0
 settings[omega_demo_regions_list][header_nav] = 0
+settings[omega_demo_regions_list][sidebar] = 0
 settings[omega_toggle_extension_compatibility] = 1
 settings[omega_conditional_classes_html] = 1
 settings[omega_apple_touch] = 1
