@@ -6,7 +6,7 @@
 function wallpapyrus_preprocess_page(&$variables) {
   if (drupal_is_front_page()) {
     unset($variables['page']['content']['system_main']['default_message']);
-    drupal_set_title('');
+    drupal_set_title('Новые обои');
   }
 
   if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))) {
