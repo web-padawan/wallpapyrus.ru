@@ -1,0 +1,36 @@
+.view-taxonomy-term {
+  .view-content {
+    @extend %wallp-container;
+  }
+  .views-row {
+    @extend %wallp-item;
+  }
+  .node--wallpaper--teaser {
+    position: relative;
+    header {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      h2 {
+        @include adjust-font-size-to(14px);
+        font-weight: normal;
+      }
+    }
+    .field--type-image {
+      img {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .node__submitted {
+    @extend %wallp-date;
+    p {
+      margin: 0;
+    }
+  }
+  .node__links {
+    display: none;
+  }
+}
