@@ -45,7 +45,7 @@
 }
 
 .content {
-  @include span(8 of 12);
+  @include span(11 of 16);
   padding: 10px;
 
   &__title {
@@ -58,7 +58,7 @@
 }
 
 .sidebar {
-  @include span(last 4 of 12);
+  @include span(last 5 of 16);
   padding: 10px;
 }
 
