@@ -45,11 +45,21 @@
 }
 
 .content {
-  @include span(8 of 12);
+  @include span(9 of 12);
+  padding: 10px;
+
+  &__title {
+    @include adjust-font-size-to(16px);
+    padding-top: 3px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #222;
+    color: $content-title;
+  }
 }
 
 .sidebar {
-  @include span(last 4 of 12);
+  @include span(last 3 of 12);
+  padding: 10px;
 }
 
 .footer {
