@@ -15,6 +15,7 @@
 
 .header__title {
   margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 .header__title a {
   text-transform: uppercase;
@@ -23,12 +24,6 @@
 .header__title a:hover {
   text-decoration: none;
   color: #b0b0b0;
-}
-.header__slogan {
-  margin-bottom: 1.5em;
-  font-size: 21px;
-  color: #9c9c9c;
-  font-weight: normal;
 }
 
 .main__container {

@@ -18,6 +18,7 @@
   }
   &__title {
     @include leader;
+    @include trailer;
     a {
       text-transform: uppercase;
       font-family: $intro-regular;
@@ -26,12 +27,6 @@
         color: darken($link-default, 15%);
       }
     }
-  }
-  &__slogan {
-    @include trailer;
-    font-size: 21px;
-    color: $text-medium;
-    font-weight: normal;
   }
 }
 
