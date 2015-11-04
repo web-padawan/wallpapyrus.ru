@@ -3,17 +3,25 @@
     <?php foreach ($items as $delta => $item): ?>
 
       <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
+
+        <?php if ($element['#view_mode'] === 'teaser'):?>
+          <a href="/node/<?php print $element['#object']->nid ?>">
+        <?php endif ?>
+
         <?php
           $url = $item['#item']['uri'];
           $image = array(
             'style_name' => 'wallpaper_preview_480x300',
             'path' => $url
           );
-
           print theme('image_style', $image);
-
         ?>
-        <?php if ($element['#view_mode'] !== 'teaser'): ?>
+
+        <?php if ($element['#view_mode'] === 'teaser'):?>
+          </a>
+        <?php endif ?>
+
+        <?php if ($element['#view_mode'] === 'full'): ?>
           <div class="download">
             <div class="download__title">Select your size:</div>
             <div class="downoad__links">
@@ -23,6 +31,7 @@
             </div>
           </div>
         <?php endif ?>
+
       </div>
 
     <?php endforeach; ?>
