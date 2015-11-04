@@ -1,0 +1,36 @@
+%aside-box {
+  margin-bottom: 10px;
+  border: 1px solid $aside-border;
+  border-top: 0;
+}
+
+%aside-box__title {
+  border-top: 3px solid $aside-border;
+  border-bottom: 1px solid $aside-border;
+  color: $aside-title;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 32px;
+  padding: 0 12px;
+}
+
+.block--views-categories-block,
+.block--tagclouds {
+  @extend %aside-box;
+
+  .block__title {
+    @extend %aside-box__title;
+  }
+
+  .block__content {
+    padding: 10px;
+  }
+}
+
+.block--views-categories-block {
+  ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+}

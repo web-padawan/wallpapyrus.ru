@@ -22,9 +22,10 @@
     a {
       text-transform: uppercase;
       font-family: $intro-regular;
+      color: $site-title;
       &:hover {
         text-decoration: none;
-        color: darken($link-default, 15%);
+        color: lighten($site-title, 15%);
       }
     }
   }

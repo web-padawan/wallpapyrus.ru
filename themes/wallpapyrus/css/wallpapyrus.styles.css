@@ -441,7 +441,7 @@ body {
 }
 
 a {
-  color: #d6d6d6;
+  color: #0088cc;
   text-decoration: none;
 }
 a:hover, a:focus {
@@ -508,4 +508,33 @@ h6 {
   font-size: 1.125rem;
   line-height: 24px;
   line-height: 1.5rem;
+}
+
+.block--views-categories-block,
+.block--tagclouds {
+  margin-bottom: 10px;
+  border: 1px solid #2f2f2f;
+  border-top: 0;
+}
+
+.block--views-categories-block .block__title,
+.block--tagclouds .block__title {
+  border-top: 3px solid #2f2f2f;
+  border-bottom: 1px solid #2f2f2f;
+  color: #a8a8a8;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 32px;
+  padding: 0 12px;
+}
+
+.block--views-categories-block .block__content,
+.block--tagclouds .block__content {
+  padding: 10px;
+}
+
+.block--views-categories-block ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 14px;
 }
