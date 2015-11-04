@@ -19,5 +19,5 @@ function wallpapyrus_omega_layout_alter(&$layout) {
 function wallpapyrus_preprocess_node(&$variables) {
   $node = $variables['node'];
   $variables['date'] = format_date($node->created, 'custom', 'd.m.Y');
-  $variables['submitted'] = t('Добавлено: !datetime', array('!datetime' => $variables['date']));
+  $variables['submitted'] = t('Uploaded: !datetime', array('!datetime' => $variables['date']));
 }
