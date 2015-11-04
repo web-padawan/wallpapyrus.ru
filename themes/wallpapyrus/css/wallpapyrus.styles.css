@@ -472,6 +472,10 @@ a {
 a:hover, a:focus {
   text-decoration: underline;
 }
+a.active {
+  color: #0088cc;
+  font-weight: bold;
+}
 
 p {
   margin-top: 0;

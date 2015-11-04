@@ -1,6 +1,11 @@
 a {
   color: $link-default;
   @include hover-link;
+
+  &.active {
+    color: $link-default;
+    font-weight: bold;
+  }
 }
 
 
