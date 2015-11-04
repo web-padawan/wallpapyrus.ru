@@ -13,14 +13,16 @@
           print theme('image_style', $image);
 
         ?>
-        <div class="download">
-          <div class="download__title">Select your size:</div>
-          <div class="downoad__links">
-            <?php
-              print l('Thumbnail', file_force_create_url(image_style_path('thumbnail', $url)));
-            ?>
+        <?php if ($element['#view_mode'] !== 'teaser'): ?>
+          <div class="download">
+            <div class="download__title">Select your size:</div>
+            <div class="downoad__links">
+              <?php
+                print l('Thumbnail', file_force_create_url(image_style_path('thumbnail', $url)));
+              ?>
+            </div>
           </div>
-        </div>
+        <?php endif ?>
       </div>
 
     <?php endforeach; ?>
