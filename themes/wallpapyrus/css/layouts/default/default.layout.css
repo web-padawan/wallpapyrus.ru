@@ -3,7 +3,7 @@
   src: url('../../../fonts/Intro-Regular.ttf?1435307129') format('truetype');
 }
 .topline__container, .header__container, .nav__container, .main__container, .footer__container {
-  max-width: 1200px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -32,7 +32,7 @@
 }
 
 .content {
-  width: 74.57627%;
+  width: 66.10169%;
   float: left;
   margin-right: 1.69492%;
   padding: 10px;
@@ -47,7 +47,7 @@
 }
 
 .sidebar {
-  width: 23.72881%;
+  width: 32.20339%;
   float: right;
   margin-right: 0;
   padding: 10px;
