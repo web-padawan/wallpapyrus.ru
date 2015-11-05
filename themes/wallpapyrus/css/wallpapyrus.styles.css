@@ -616,12 +616,18 @@ h6 {
 .header .search-form .form-text {
   height: 32px;
   width: 166px;
+  position: relative;
+  left: 2px;
+  top: 1px;
   padding-left: 10px;
   border: none;
-  border-radius: 5px;
   outline: none;
   background: #0e0e0e;
   color: #9c9c9c;
+}
+.header .search-form .form-text:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 100px #0e0e0e inset;
+  -webkit-text-fill-color: #9c9c9c !important;
 }
 .header .search-form .form-text:-moz-placeholder {
   color: #9c9c9c;

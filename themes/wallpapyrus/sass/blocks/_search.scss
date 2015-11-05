@@ -20,12 +20,18 @@
     .form-text {
       height: 32px;
       width: 166px;
+      position: relative;
+      left: 2px;
+      top: 1px;
       padding-left: 10px;
       border: none;
-      border-radius: 5px;
       outline: none;
       background: $bg-default;
       color: $text-medium;
+      &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 100px $bg-default inset;
+        -webkit-text-fill-color: $text-medium!important;
+      }
       @include input-placeholder {
         color: $text-medium;
         font-size: 14px;
