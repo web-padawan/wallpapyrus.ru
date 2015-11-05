@@ -16,10 +16,12 @@ video {
   height: auto;
 }
 
-@font-face {
-  font-family: "Intro-Regular";
-  src: url('../fonts/Intro-Regular.ttf?1435307129') format('truetype');
+@media (max-width: 1024px) {
+  body.admin-menu.adminimal-menu:before {
+    height: 0 !important;
+  }
 }
+
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -436,19 +438,19 @@ html {
 }
 
 body {
-  background: #0e0e0e url('../images/body.jpg?1358697891') center top repeat-x;
+  background: #0e0e0e url('../images/body.jpg?1446710208') center top repeat;
   color: #373737;
 }
 
 a {
-  color: #0088cc;
+  color: #c3964f;
   text-decoration: none;
 }
 a:hover, a:focus {
   text-decoration: underline;
 }
 a.active {
-  color: #0088cc;
+  color: #c3964f;
   font-weight: bold;
 }
 
@@ -531,7 +533,8 @@ h6 {
 .block--tagclouds .block__title {
   border-top: 3px solid #2f2f2f;
   border-bottom: 1px solid #2f2f2f;
-  color: #a8a8a8;
+  color: #dac797;
+  background: #190500;
   font-size: 14px;
   font-weight: bold;
   line-height: 32px;
@@ -570,7 +573,7 @@ h6 {
   margin-top: 15px;
   padding: 4px;
   border: 1px solid #2f2f2f;
-  border-top-color: #0088cc;
+  border-top-color: #c3964f;
 }
 .view-taxonomy-term .node--wallpaper--teaser,
 .view-front-page-content .node--wallpaper--teaser {
@@ -586,7 +589,7 @@ h6 {
   padding-right: 5px;
   font-size: 12px;
   text-indent: 5px;
-  background: rgba(23, 23, 23, 0.9);
+  background: rgba(12, 4, 1, 0.9);
   color: #eee;
 }
 .view-taxonomy-term .node__submitted p,

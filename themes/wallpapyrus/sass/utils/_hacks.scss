@@ -1,0 +1,7 @@
+body.admin-menu.adminimal-menu {
+  &:before {
+    @include breakpoint(max-width $md) {
+      height: 0!important;
+    }
+  }
+}

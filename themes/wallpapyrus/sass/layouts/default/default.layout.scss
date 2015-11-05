@@ -19,13 +19,14 @@
   &__title {
     @include leader;
     @include trailer;
+    padding-left: 10px;
     a {
-      text-transform: uppercase;
-      font-family: $intro-regular;
-      color: $site-title;
-      &:hover {
-        text-decoration: none;
-        color: lighten($site-title, 15%);
+      display: block;
+      span {
+        @include replace-text('logo.png');
+        width: 250px;
+        height: 56px;
+        display: block;
       }
     }
   }
@@ -50,9 +51,11 @@
 
   &__title {
     @include adjust-font-size-to(16px);
-    padding-top: 3px;
-    padding-bottom: 7px;
-    border-bottom: 1px solid #222;
+    margin-left: 10px;
+    padding: 4px 0 4px 10px;
+    background: $content-header;
+    border: 1px solid $content-border;
+    border-top: 3px solid $content-border;
     color: $content-title;
   }
 }
