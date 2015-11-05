@@ -576,8 +576,8 @@ h6 {
 .view-front-page-content .node--wallpaper--teaser {
   position: relative;
 }
-.view-taxonomy-term .node--wallpaper--teaser header,
-.view-front-page-content .node--wallpaper--teaser header {
+.view-taxonomy-term .node--wallpaper--teaser h2,
+.view-front-page-content .node--wallpaper--teaser h2 {
   display: none;
 }
 .view-taxonomy-term .node__submitted,
@@ -600,4 +600,5 @@ h6 {
 
 .wallp__title {
   text-align: center;
+  font-size: 14px;
 }
