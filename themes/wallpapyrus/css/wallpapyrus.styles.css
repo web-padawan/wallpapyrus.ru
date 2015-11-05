@@ -604,8 +604,9 @@ h6 {
 .header .search-form {
   width: 199px;
   height: 35px;
-  background: #fff;
+  background: #0e0e0e;
   border-radius: 5px;
+  border: solid 1px #2f2f2f;
 }
 .header .search-form .form-type-textfield,
 .header .search-form .form-actions {
@@ -613,12 +614,14 @@ h6 {
   margin: 0;
 }
 .header .search-form .form-text {
-  height: 34px;
+  height: 32px;
   width: 166px;
   padding-left: 10px;
   border: none;
   border-radius: 5px;
   outline: none;
+  background: #0e0e0e;
+  color: #9c9c9c;
 }
 .header .search-form .form-text:-moz-placeholder {
   color: #9c9c9c;
@@ -640,13 +643,20 @@ h6 {
   font-size: 14px;
   font-style: italic;
 }
-.header .search-form .form-submit {
-  background: url('../images/generated/icons-sca4f524aa6.png') 0 0 no-repeat;
-  width: 30px;
-  height: 30px;
+.header .search-form .form-actions {
   position: relative;
   top: 2px;
   left: 1px;
+  background: #252525;
+  border-radius: 3px;
+}
+.header .search-form .form-actions:hover {
+  background: #3f3f3f;
+}
+.header .search-form .form-submit {
+  background: url('../images/generated/icons-s0f2d056b55.png') 0 0 no-repeat;
+  width: 28px;
+  height: 28px;
   padding: 0;
   border: none;
   color: transparent;

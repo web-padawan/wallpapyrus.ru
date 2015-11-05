@@ -8,8 +8,9 @@
   .search-form {
     width: 199px;
     height: 35px;
-    background: #fff;
+    background: $search-bg;
     border-radius: 5px;
+    border: solid 1px $search-border;
 
     .form-type-textfield,
     .form-actions {
@@ -17,23 +18,32 @@
       margin: 0;
     }
     .form-text {
-      height: 34px;
+      height: 32px;
       width: 166px;
       padding-left: 10px;
       border: none;
       border-radius: 5px;
       outline: none;
+      background: $bg-default;
+      color: $text-medium;
       @include input-placeholder {
         color: $text-medium;
         font-size: 14px;
         font-style: italic;
       }
     }
-    .form-submit {
-      @include s('search');
+    .form-actions {
       position: relative;
       top: 2px;
       left: 1px;
+      background: $search-btn;
+      border-radius: 3px;
+      &:hover {
+        background: lighten($search-btn, 10%);
+      }
+    }
+    .form-submit {
+      @include s('search');
       padding: 0;
       border: none;
       color: transparent;
