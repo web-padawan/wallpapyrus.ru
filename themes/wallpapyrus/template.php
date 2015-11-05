@@ -21,3 +21,13 @@ function wallpapyrus_preprocess_node(&$variables) {
   $variables['date'] = format_date($node->created, 'custom', 'd.m.Y');
   $variables['submitted'] = t('!datetime', array('!datetime' => $variables['date']));
 }
+
+/*
+ * Implements THEME_preprocess_search_result().
+ */
+function wallpapyrus_preprocess_search_result(&$vars) {
+  $node = $vars['result']['node'];
+  if ($node->nid) {
+    $vars['teaser'] = node_view($node, 'teaser');
+  }
+}

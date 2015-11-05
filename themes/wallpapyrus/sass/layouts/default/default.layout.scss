@@ -19,6 +19,7 @@
   &__title {
     @include leader;
     @include trailer;
+    float: left;
     padding-left: 10px;
     a {
       display: block;

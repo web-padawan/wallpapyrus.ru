@@ -1,35 +1,15 @@
 .view-taxonomy-term,
 .view-front-page-content {
   .view-content {
-    @include nested(9);
-    overflow: hidden;
+    @extend %wallp-container;
   }
   .views-row {
-    @include span(3 of 9 split);
-    position: relative;
-    margin-top: 15px;
-    padding: 4px;
-    border: 1px solid $item-border;
-    border-top-color: $item-top;
+    @extend %wallp-item;
   }
   .node--wallpaper--teaser {
-    position: relative;
-    h2 {
-      display: none;
-    }
+    @extend %wallp-node
   }
   .node__submitted {
-    position: absolute;
-    padding-right: 5px;
-    font-size: 12px;
-    text-indent: 5px;
-    background: rgba($bg-content, 0.9);
-    color: #eee;
-    p {
-      margin: 0;
-    }
-  }
-  .node__links {
-    display: none;
+    @extend %wallp-date;
   }
 }

@@ -12,6 +12,7 @@
 .header__title {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+  float: left;
   padding-left: 10px;
 }
 .header__title a {
