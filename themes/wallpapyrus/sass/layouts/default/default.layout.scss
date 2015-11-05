@@ -47,7 +47,8 @@
 
 .content {
   @include span(11 of 16);
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   &__title {
     @include adjust-font-size-to(16px);

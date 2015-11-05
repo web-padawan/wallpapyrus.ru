@@ -35,10 +35,15 @@
 }
 
 .content {
-  width: 68.35443%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 68.75%;
   float: left;
-  margin-right: 1.26582%;
-  padding: 10px;
+  padding-left: 0.625%;
+  padding-right: 0.625%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .content__title {
   font-size: 1em;
@@ -52,8 +57,12 @@
 }
 
 .sidebar {
-  width: 30.37975%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 31.25%;
   float: right;
-  margin-right: 0;
+  padding-left: 0.625%;
+  padding-right: 0.625%;
   padding: 10px;
 }
