@@ -514,6 +514,23 @@ input[type="submit"] {
   text-align: center;
 }
 
+.messages {
+  margin: 24px 0;
+}
+
+.messages--status,
+.messages--error {
+  background-color: transparent;
+}
+
+.messages--status {
+  color: #be7;
+}
+
+.messages--error {
+  color: #ed541d;
+}
+
 a {
   color: #c3964f;
   text-decoration: none;

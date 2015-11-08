@@ -46,10 +46,12 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.content__row {
+  padding-left: 10px;
+}
 .content__title {
   font-size: 1em;
   line-height: 1.5em;
-  margin-left: 10px;
   padding: 4px 0 4px 10px;
   background: #190500;
   border: 1px solid #2f2f2f;

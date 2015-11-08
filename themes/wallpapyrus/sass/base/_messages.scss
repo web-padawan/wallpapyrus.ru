@@ -1,0 +1,16 @@
+.messages {
+  margin: $vert-spacing-unit 0;
+}
+
+.messages--status,
+.messages--error {
+  background-color: transparent;
+}
+
+.messages--status {
+  color: $status-text;
+}
+
+.messages--error {
+  color: $error-text;
+}
