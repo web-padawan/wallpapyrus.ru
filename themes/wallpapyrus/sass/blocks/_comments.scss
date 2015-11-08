@@ -1,0 +1,86 @@
+.comments {
+
+  &__title {
+    @include adjust-font-size-to(16px);
+    margin: $vert-spacing-unit 0;
+  }
+
+  &__form-title {
+    @include adjust-font-size-to(16px);
+  }
+
+  .new {
+    display: none;
+  }
+}
+
+.comment {
+  margin-bottom: $vert-spacing-unit;
+
+  .page-comment & {
+    margin: $vert-spacing-unit 0;
+    padding-left: 10px;
+  }
+
+  h3 {
+    display: none;
+  }
+
+  .permalink {
+    display: none;
+  }
+
+  &__submitted {
+    margin: 0;
+  }
+
+  &__links {
+    font-style: italic;
+    font-size: 14px;
+  }
+}
+
+.comment-form {
+
+  .page-comment & {
+    padding-left: 10px;
+  }
+
+  div[id^="edit-author"],
+  #edit-preview,
+  .grippie {
+    display: none;
+  }
+
+  label {
+    float: left;
+    margin-right: 4px;
+  }
+
+  .form-item-subject {
+    display: none;
+  }
+
+  .field-name-comment-body {
+    label {
+      display: none;
+    }
+  }
+
+  .form-textarea {
+    max-width: 380px;
+    resize: none;
+    background: $input-bg;
+    color: $input-text;
+    border: solid 1px $input-border;
+    &:focus {
+      outline: none;
+      border: solid 1px $input-outline;
+    }
+  }
+}
+
+.comment-confirm-delete {
+  margin-top: $vert-spacing-unit;
+  padding-left: 10px;
+}

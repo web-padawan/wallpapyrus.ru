@@ -3,8 +3,17 @@
     position: relative;
     padding-left: 10px;
 
+    .node__content {
+      margin-bottom: $vert-spacing-unit;
+      overflow: hidden;
+    }
+
     .node__submitted {
       top: $vert-spacing-unit;
+    }
+
+    .node__links {
+      margin-top: $vert-spacing-unit;
     }
 
     .field {

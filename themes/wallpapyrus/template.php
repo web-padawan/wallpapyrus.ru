@@ -24,7 +24,7 @@ function wallpapyrus_omega_layout_alter(&$layout) {
  */
 function wallpapyrus_preprocess_node(&$variables) {
   $node = $variables['node'];
-  $variables['date'] = format_date($node->created, 'custom', 'd.m.Y');
+  $variables['date'] = format_date($node->created, 'custom', 'j.m.Y');
   $variables['submitted'] = t('!datetime', array('!datetime' => $variables['date']));
 }
 
@@ -36,4 +36,15 @@ function wallpapyrus_preprocess_search_result(&$vars) {
   if ($node->nid) {
     $vars['teaser'] = node_view($node, 'teaser');
   }
+}
+
+/**
+ * Implements THEME_preprocess_comment().
+ */
+function wallpapyrus_preprocess_comment(&$variables) {
+  $comment = $variables['elements']['#comment'];
+  $variables['created'] = format_date($comment->created, 'custom', 'j.m.Y H:i');
+  $variables['changed'] = format_date($comment->changed, 'custom', 'j.m.Y H:i');
+
+  $variables['submitted'] = t('!username, !datetime ', array('!username' => $variables['author'], '!datetime' => $variables['created']));
 }

@@ -27,13 +27,13 @@
       border: none;
       outline: none;
       background: $bg-default;
-      color: $text-medium;
+      color: $text-default;
       &:-webkit-autofill {
         -webkit-box-shadow: 0 0 0 100px $bg-default inset;
-        -webkit-text-fill-color: $text-medium!important;
+        -webkit-text-fill-color: $text-default!important;
       }
       @include input-placeholder {
-        color: $text-medium;
+        color: $text-default;
         font-size: 14px;
         font-style: italic;
       }

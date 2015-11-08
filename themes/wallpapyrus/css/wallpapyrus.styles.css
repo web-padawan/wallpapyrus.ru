@@ -494,6 +494,18 @@ body {
   color: #9c9c9c;
 }
 
+.form-submit {
+  padding: 7px;
+  font-size: 14px;
+  text-align: center;
+  background: #b48333;
+  color: #0c0401;
+}
+.form-submit:hover {
+  background: #65491c;
+  color: #f3fbfe;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="search"], textarea {
@@ -612,6 +624,79 @@ h6 {
   line-height: 1.5rem;
 }
 
+.comments__title {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  margin: 24px 0;
+}
+.comments__form-title {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+.comments .new {
+  display: none;
+}
+
+.comment {
+  margin-bottom: 24px;
+}
+.page-comment .comment {
+  margin: 24px 0;
+  padding-left: 10px;
+}
+.comment h3 {
+  display: none;
+}
+.comment .permalink {
+  display: none;
+}
+.comment__submitted {
+  margin: 0;
+}
+.comment__links {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.page-comment .comment-form {
+  padding-left: 10px;
+}
+.comment-form div[id^="edit-author"],
+.comment-form #edit-preview,
+.comment-form .grippie {
+  display: none;
+}
+.comment-form label {
+  float: left;
+  margin-right: 4px;
+}
+.comment-form .form-item-subject {
+  display: none;
+}
+.comment-form .field-name-comment-body label {
+  display: none;
+}
+.comment-form .form-textarea {
+  max-width: 380px;
+  resize: none;
+  background: #0e0e0e;
+  color: #9c9c9c;
+  border: solid 1px #2f2f2f;
+}
+.comment-form .form-textarea:focus {
+  outline: none;
+  border: solid 1px #b48333;
+}
+
+.comment-confirm-delete {
+  margin-top: 24px;
+  padding-left: 10px;
+}
+
 .fivestar-widget {
   display: inline-block !important;
   vertical-align: middle;
@@ -631,8 +716,15 @@ h6 {
   position: relative;
   padding-left: 10px;
 }
+.node--full .node__content {
+  margin-bottom: 24px;
+  overflow: hidden;
+}
 .node--full .node__submitted {
   top: 24px;
+}
+.node--full .node__links {
+  margin-top: 24px;
 }
 .node--full .field {
   float: left;
