@@ -1,0 +1,34 @@
+.node--wallpaper-desktop,
+.node--wallpaper-mobile {
+  &--full {
+    position: relative;
+    padding-left: 10px;
+
+    .node__submitted {
+      @extend %wallp-date;
+      top: $vert-spacing-unit;
+    }
+  }
+
+  .field--name-field-tags,
+  .field--name-field-tag-categories,
+  .field--name-field-wallpaper-rating {
+    float: left;
+    overflow: hidden;
+    margin-right: 12px;
+    .field__label {
+      float: left;
+      margin-right: 4px;
+    }
+    .field__items {
+      float: left;
+    }
+    .field__item {
+      float: left;
+      margin-right: 4px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}

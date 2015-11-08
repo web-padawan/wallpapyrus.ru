@@ -1,8 +1,14 @@
 .fivestar-widget {
+  display: inline-block!important;
+  vertical-align: middle;
   .description {
     display: none;
   }
   .ajax-progress-throbber {
     display: none;
   }
+}
+
+.form-type-fivestar {
+  line-height: 0;
 }
