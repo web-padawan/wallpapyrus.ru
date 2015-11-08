@@ -477,9 +477,7 @@ html {
   display: none;
 }
 
-.node--wallpaper-desktop--full .node__submitted,
-.node--wallpaper-mobile--full .node__submitted, .search-results .node__submitted, .view-taxonomy-term .node__submitted,
-.view-front-page-content .node__submitted {
+.node__submitted {
   position: absolute;
   padding-right: 5px;
   font-size: 12px;
@@ -487,9 +485,7 @@ html {
   background: rgba(12, 4, 1, 0.9);
   color: #eee;
 }
-.node--wallpaper-desktop--full .node__submitted p,
-.node--wallpaper-mobile--full .node__submitted p, .search-results .node__submitted p, .view-taxonomy-term .node__submitted p,
-.view-front-page-content .node__submitted p {
+.node__submitted p {
   margin: 0;
 }
 
@@ -631,57 +627,30 @@ h6 {
   line-height: 0;
 }
 
-.node--wallpaper-desktop--full,
-.node--wallpaper-mobile--full {
+.node--full {
   position: relative;
   padding-left: 10px;
 }
-.node--wallpaper-desktop--full .node__submitted,
-.node--wallpaper-mobile--full .node__submitted {
+.node--full .node__submitted {
   top: 24px;
 }
-.node--wallpaper-desktop .field--name-field-tags,
-.node--wallpaper-desktop .field--name-field-tag-categories,
-.node--wallpaper-desktop .field--name-field-wallpaper-rating,
-.node--wallpaper-mobile .field--name-field-tags,
-.node--wallpaper-mobile .field--name-field-tag-categories,
-.node--wallpaper-mobile .field--name-field-wallpaper-rating {
+.node--full .field {
   float: left;
   overflow: hidden;
   margin-right: 12px;
 }
-.node--wallpaper-desktop .field--name-field-tags .field__label,
-.node--wallpaper-desktop .field--name-field-tag-categories .field__label,
-.node--wallpaper-desktop .field--name-field-wallpaper-rating .field__label,
-.node--wallpaper-mobile .field--name-field-tags .field__label,
-.node--wallpaper-mobile .field--name-field-tag-categories .field__label,
-.node--wallpaper-mobile .field--name-field-wallpaper-rating .field__label {
+.node--full .field .field__label {
   float: left;
   margin-right: 4px;
 }
-.node--wallpaper-desktop .field--name-field-tags .field__items,
-.node--wallpaper-desktop .field--name-field-tag-categories .field__items,
-.node--wallpaper-desktop .field--name-field-wallpaper-rating .field__items,
-.node--wallpaper-mobile .field--name-field-tags .field__items,
-.node--wallpaper-mobile .field--name-field-tag-categories .field__items,
-.node--wallpaper-mobile .field--name-field-wallpaper-rating .field__items {
+.node--full .field .field__items {
   float: left;
 }
-.node--wallpaper-desktop .field--name-field-tags .field__item,
-.node--wallpaper-desktop .field--name-field-tag-categories .field__item,
-.node--wallpaper-desktop .field--name-field-wallpaper-rating .field__item,
-.node--wallpaper-mobile .field--name-field-tags .field__item,
-.node--wallpaper-mobile .field--name-field-tag-categories .field__item,
-.node--wallpaper-mobile .field--name-field-wallpaper-rating .field__item {
+.node--full .field .field__item {
   float: left;
   margin-right: 4px;
 }
-.node--wallpaper-desktop .field--name-field-tags .field__item:last-child,
-.node--wallpaper-desktop .field--name-field-tag-categories .field__item:last-child,
-.node--wallpaper-desktop .field--name-field-wallpaper-rating .field__item:last-child,
-.node--wallpaper-mobile .field--name-field-tags .field__item:last-child,
-.node--wallpaper-mobile .field--name-field-tag-categories .field__item:last-child,
-.node--wallpaper-mobile .field--name-field-wallpaper-rating .field__item:last-child {
+.node--full .field .field__item:last-child {
   margin-right: 0px;
 }
 

@@ -77,10 +77,7 @@
 
   .node--wallpaper-desktop--teaser,
   .node--wallpaper-mobile--teaser {
-    @extend %wallp-node
+    @extend %wallp-node;
   }
 
-  .node__submitted {
-    @extend %wallp-date;
-  }
 }
