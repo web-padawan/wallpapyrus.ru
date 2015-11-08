@@ -30,7 +30,7 @@
 
     <?php if ($element['#view_mode'] === 'full'): ?>
       <div class="wallp__download wallp-download">
-        <div class="wallp-download__title">Select your size:</div>
+        <div class="wallp-download__title">Выберите размер:</div>
         <div class="wallp-download__link">
           <?php
             print l('Thumbnail', file_force_create_url(image_style_path('thumbnail', $url)));
