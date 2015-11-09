@@ -745,6 +745,14 @@ h6 {
   display: none;
 }
 
+.fivestar-static-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+.fivestar-static-item .form-item {
+  margin: 0;
+}
+
 .form-type-fivestar {
   line-height: 0;
 }
