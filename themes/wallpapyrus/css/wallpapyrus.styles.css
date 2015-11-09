@@ -761,10 +761,11 @@ h6 {
 }
 .node--full .node__content {
   margin-bottom: 24px;
+  padding-top: 16px;
   overflow: hidden;
 }
 .node--full .node__submitted {
-  top: 24px;
+  top: 56px;
 }
 .node--full .node__links {
   margin-top: 24px;
@@ -777,9 +778,11 @@ h6 {
 .node--full .field .field__label {
   float: left;
   margin-right: 4px;
+  font-size: 14px;
 }
 .node--full .field .field__items {
   float: left;
+  font-size: 14px;
 }
 .node--full .field .field__item {
   float: left;
@@ -909,7 +912,8 @@ h6 {
   font-size: 14px;
 }
 .wallp--full {
-  padding-top: 24px;
+  padding-top: 16px;
+  clear: both;
 }
 .wallp--full .wallp__image {
   width: 50%;

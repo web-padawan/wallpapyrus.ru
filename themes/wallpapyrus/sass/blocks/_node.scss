@@ -5,11 +5,12 @@
 
     .node__content {
       margin-bottom: $vert-spacing-unit;
+      padding-top: $vert-spacing-unit / 1.5;
       overflow: hidden;
     }
 
     .node__submitted {
-      top: $vert-spacing-unit;
+      top: 56px;
     }
 
     .node__links {
@@ -23,9 +24,11 @@
       .field__label {
         float: left;
         margin-right: 4px;
+        font-size: 14px;
       }
       .field__items {
         float: left;
+        font-size: 14px;
       }
       .field__item {
         float: left;
