@@ -26,3 +26,51 @@ input[type="submit"] {
   text-decoration: none;
   text-align: center;
 }
+
+.form-text {
+  padding: 3px;
+  padding-left: 10px;
+  border: solid 1px $input-border;
+  outline: none;
+  background: $input-bg;
+  color: $input-text;
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 100px $input-bg inset;
+    -webkit-text-fill-color: $input-text!important;
+  }
+  &:focus {
+    border: solid 1px $input-outline;
+  }
+  &.error {
+    border: 1px solid red;
+    &:focus {
+      border: solid 1px $input-outline;
+    }
+  }
+  @include input-placeholder {
+    color: $input-text;
+    font-size: 14px;
+  }
+}
+
+.form-submit {
+  padding: 7px;
+  font-size: 14px;
+  text-align: center;
+  background: $btn-ok-bg;
+  color: $btn-ok-text;
+  &:hover {
+    background: darken($btn-ok-bg, 10%);
+  }
+}
+
+.form-textarea {
+  resize: none;
+  background: $input-bg;
+  color: $input-text;
+  border: solid 1px $input-border;
+  &:focus {
+    outline: none;
+    border: solid 1px $input-outline;
+  }
+}

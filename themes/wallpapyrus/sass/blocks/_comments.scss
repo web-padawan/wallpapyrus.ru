@@ -30,6 +30,10 @@
     display: none;
   }
 
+  &__content {
+    overflow: hidden;
+  }
+
   &__submitted {
     margin: 0;
   }
@@ -69,14 +73,6 @@
 
   .form-textarea {
     max-width: 380px;
-    resize: none;
-    background: $input-bg;
-    color: $input-text;
-    border: solid 1px $input-border;
-    &:focus {
-      outline: none;
-      border: solid 1px $input-outline;
-    }
   }
 }
 

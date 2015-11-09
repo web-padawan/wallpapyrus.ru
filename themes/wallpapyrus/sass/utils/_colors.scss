@@ -1,22 +1,27 @@
+// background
 $bg-default     : #0e0e0e;
 $bg-content     : #0c0401;
 
 // text
 $text-default   : #9c9c9c;
 
+// links
 $link-default   : #c3964f;
 
-$content-header : #190500;
-$content-title  : #dac797;
-$content-border : #2f2f2f;
+// blocks
+$block-header   : #190500;
+$block-title    : #dac797;
+$block-border   : #2f2f2f;
 
-$aside-header   : #190500;
-$aside-title    : #dac797;
-$aside-border   : #2f2f2f;
+// teaser
+$teaser-border  : #2f2f2f;
+$teaser-top     : #c3964f;
 
-$item-border    : #2f2f2f;
-$item-top       : #c3964f;
+// date
+$date-bg        : #0c0401;
+$date-color     : #eee;
 
+// search
 $search-bg      : #0e0e0e;
 $search-border  : #2f2f2f;
 $search-btn     : #252525;
@@ -26,8 +31,8 @@ $status-text    : #be7;
 $error-text     : #ed541d;
 
 // buttons
-$btn-submit-bg  : #b48333;
-$btn-submit-text: #0c0401;
+$btn-ok-bg      : #558000;
+$btn-ok-text    : #fff;
 
 // input
 $input-bg       : #0e0e0e;

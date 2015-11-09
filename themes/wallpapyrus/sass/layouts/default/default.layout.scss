@@ -57,10 +57,10 @@
   &__title {
     @include adjust-font-size-to(16px);
     padding: 4px 0 4px 10px;
-    background: $content-header;
-    border: 1px solid $content-border;
-    border-top: 3px solid $content-border;
-    color: $content-title;
+    background: $block-header;
+    border: 1px solid $block-border;
+    border-top: 3px solid $block-border;
+    color: $block-title;
   }
 }
 

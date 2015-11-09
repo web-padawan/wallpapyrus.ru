@@ -8,8 +8,8 @@
   position: relative;
   margin-top: 15px;
   padding: 4px;
-  border: 1px solid $item-border;
-  border-top-color: $item-top;
+  border: 1px solid $teaser-border;
+  border-top-color: $teaser-top;
 }
 
 %wallp-node {
@@ -27,8 +27,8 @@
   padding-right: 5px;
   font-size: 12px;
   text-indent: 5px;
-  background: rgba($bg-content, 0.9);
-  color: #eee;
+  background: rgba($date-bg, 0.9);
+  color: $date-color;
   p {
     margin: 0;
   }
