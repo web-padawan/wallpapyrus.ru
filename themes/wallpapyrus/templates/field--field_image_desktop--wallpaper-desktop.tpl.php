@@ -41,7 +41,7 @@
           'wide_1440x900'  => '1440x900'
         );
         $hd = array(
-          'hd_2560x1600' => '2560x1440',
+          'hd_2560x1440' => '2560x1440',
           'hd_1920x1080' => '1920x1080',
           'hd_1600x900'  => '1600x900',
           'hd_1366x768'  => '1366x768'
@@ -54,7 +54,7 @@
         );
       ?>
 
-      <div class="wallp__download wallp-download" data-uri="<?php print file_uri_target($url); ?>">
+      <div class="wallp-download" data-uri="<?php print file_uri_target($url); ?>">
 
         <div class="wallp-download__orig">
           <div class="wallp-download__orig-title">Оригинальный размер:</div>

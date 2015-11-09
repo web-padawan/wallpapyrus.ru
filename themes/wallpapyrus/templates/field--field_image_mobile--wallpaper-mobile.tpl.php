@@ -55,7 +55,7 @@
         );
       ?>
 
-      <div class="wallp__download wallp-download" data-uri="<?php print file_uri_target($url); ?>">
+      <div class="wallp-download" data-uri="<?php print file_uri_target($url); ?>">
 
         <div class="wallp-download__orig">
           <div class="wallp-download__origtitle">Оригинальный размер:</div>
