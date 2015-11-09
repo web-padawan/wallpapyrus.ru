@@ -4,6 +4,7 @@
   &__title {
     text-align: center;
     font-size: 14px;
+    margin-bottom: 24px;
   }
 
   &--full {
@@ -12,6 +13,32 @@
     .wallp__image {
       width: 50%;
       float: left;
+    }
+  }
+
+  &--mobile {
+    &.wallp--full {
+      .wallp__image {
+        width: 23%;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__icon-wrapper {
+    position: absolute;
+    background: rgba($bg-content, 0.6);
+  }
+
+  &__icon {
+    height: 24px;
+    width: 24px;
+
+    &--desktop {
+      @include s('desktop');
+    }
+    &--mobile {
+      @include s('mobile');
     }
   }
 

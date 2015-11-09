@@ -11,6 +11,8 @@
 
     .node__submitted {
       top: 56px;
+      background: rgba($date-bg, 0.9);
+      color: $date-color;
     }
 
     .node__links {
@@ -40,7 +42,16 @@
     }
   }
 
+  &--teaser {
+    .node__submitted {
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+    }
+  }
+
   &__submitted {
     @extend %wallp-date;
+
   }
 }

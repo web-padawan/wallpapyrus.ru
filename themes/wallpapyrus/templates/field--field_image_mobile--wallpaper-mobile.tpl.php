@@ -1,9 +1,9 @@
 <?php foreach ($items as $delta => $item): ?>
 
   <?php if ($element['#view_mode'] === 'teaser'): ?>
-    <div class="wallp wallp--teaser">
+    <div class="wallp wallp--teaser wallp--mobile">
   <?php else: ?>
-    <div class="wallp wallp--full">
+    <div class="wallp wallp--full wallp--mobile">
   <?php endif; ?>
 
     <?php
@@ -15,11 +15,20 @@
     <?php endif; ?>
 
     <div class="wallp__image">
+
+      <?php if ($element['#view_mode'] === 'teaser'): ?>
+        <div class="wallp__icon-wrapper">
+          <div class="wallp__icon wallp__icon--mobile" title="обои для мобильных устройств">&nbsp;</div>
+        </div>
+      <?php endif; ?>
+
       <?php
         $url = $item['#item']['uri'];
+        $style_name = ($element['#view_mode'] === 'teaser') ? 'preview_480x300' : 'preview_225x320';
+
         $imgprops = image_get_info($url);
         $image = array(
-          'style_name' => 'preview_240x360',
+          'style_name' => $style_name,
           'path' => $url
         );
         print theme('image_style', $image);

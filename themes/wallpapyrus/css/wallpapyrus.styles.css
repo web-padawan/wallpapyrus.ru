@@ -479,11 +479,8 @@ html {
 
 .node__submitted {
   position: absolute;
-  padding-right: 5px;
   font-size: 12px;
   text-indent: 5px;
-  background: rgba(12, 4, 1, 0.9);
-  color: #eee;
 }
 .node__submitted p {
   margin: 0;
@@ -768,6 +765,8 @@ h6 {
 }
 .node--full .node__submitted {
   top: 56px;
+  background: rgba(12, 4, 1, 0.9);
+  color: #eee;
 }
 .node--full .node__links {
   margin-top: 24px;
@@ -792,6 +791,11 @@ h6 {
 }
 .node--full .field .field__item:last-child {
   margin-right: 0px;
+}
+.node--teaser .node__submitted {
+  width: 100%;
+  bottom: 0;
+  text-align: center;
 }
 
 .user-register-form,
@@ -852,7 +856,7 @@ h6 {
   background: #3f3f3f;
 }
 .header .search-form .form-submit {
-  background: url('../images/generated/icons-s0f2d056b55.png') 0 0 no-repeat;
+  background: url('../images/generated/icons-s344fc2ca40.png') 0 -68px no-repeat;
   width: 28px;
   height: 28px;
   padding: 0;
@@ -912,6 +916,7 @@ h6 {
 .wallp__title {
   text-align: center;
   font-size: 14px;
+  margin-bottom: 24px;
 }
 .wallp--full {
   padding-top: 16px;
@@ -920,6 +925,28 @@ h6 {
 .wallp--full .wallp__image {
   width: 50%;
   float: left;
+}
+.wallp--mobile.wallp--full .wallp__image {
+  width: 23%;
+  margin-right: 10px;
+}
+.wallp__icon-wrapper {
+  position: absolute;
+  background: rgba(12, 4, 1, 0.6);
+}
+.wallp__icon {
+  height: 24px;
+  width: 24px;
+}
+.wallp__icon--desktop {
+  background: url('../images/generated/icons-s344fc2ca40.png') 0 0 no-repeat;
+  width: 24px;
+  height: 24px;
+}
+.wallp__icon--mobile {
+  background: url('../images/generated/icons-s344fc2ca40.png') 0 -34px no-repeat;
+  width: 24px;
+  height: 24px;
 }
 .wallp-download {
   width: 50%;
