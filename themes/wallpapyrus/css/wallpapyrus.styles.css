@@ -998,6 +998,7 @@ h6 {
 }
 .wallp-download__manual-title {
   display: inline-block;
+  margin-bottom: 8px;
 }
 .wallp-download__manual .form-text {
   padding-left: 3px;
