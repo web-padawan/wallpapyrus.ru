@@ -19,7 +19,7 @@
   &--mobile {
     &.wallp--full {
       .wallp__image {
-        width: 23%;
+        width: 28%;
         margin-right: 10px;
       }
     }
@@ -47,39 +47,48 @@
     float: left;
     padding: 0 20px;
     overflow: hidden;
+    font-size: 14px;
 
     &__orig {
       &-title {
         float: left;
         margin-right: 8px;
       }
-      &-size {
-        font-size: 14px;
-      }
     }
 
     &__user {
-      margin: $vert-spacing-unit / 2 0;
+      margin: $vert-spacing-unit / 3 0;
       &-title {
         float: left;
         margin-right: 8px;
       }
-      &-size {
-        font-size: 14px;
-      }
     }
 
     &__block {
-      margin: $vert-spacing-unit / 2 0;
+      margin: $vert-spacing-unit / 3 0;
       overflow: hidden;
     }
 
     &__link {
       float: left;
       margin-right: 8px;
-      font-size: 14px;
       &:last-child {
         margin-right: 0;
+      }
+    }
+
+    &__manual {
+      &-link {
+        display: inline;
+        margin-left: 8px;
+        font-size: 14px;
+      }
+      &-title {
+        display: inline-block;
+      }
+      .form-text {
+        padding-left: 3px;
+        width: 48px;
       }
     }
   }

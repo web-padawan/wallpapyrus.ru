@@ -61,7 +61,7 @@
         );
       ?>
 
-      <div class="wallp-download" data-uri="<?php print file_uri_target($url); ?>">
+      <div class="wallp-download" data-uri="<?php print file_uri_target($url); ?>" data-type="desktop">
 
         <div class="wallp-download__orig">
           <div class="wallp-download__orig-title">Оригинальный размер:</div>
@@ -74,24 +74,34 @@
         </div>
 
         <div class="wallp-download__block wallp-download__block--wide">
-          <div class="wallp-download__type">Widescreen 16:10</div>
+          <div class="wallp-download__type">Выберите разрешение:</div>
           <?php foreach ($wide as $style_id => $style_text): ?>
             <div class="wallp-download__link"><?php print l($style_text, file_force_create_url(image_style_path($style_id, $url))); ?></div>
           <?php endforeach; ?>
         </div>
 
         <div class="wallp-download__block wallp-download__block--hd">
-          <div class="wallp-download__type">HD 16:9</div>
           <?php foreach ($hd as $style_id => $style_text): ?>
             <div class="wallp-download__link"><?php print l($style_text, file_force_create_url(image_style_path($style_id, $url))); ?></div>
           <?php endforeach; ?>
         </div>
 
         <div class="wallp-download__block wallp-download__block--full">
-          <div class="wallp-download__type">Fullscreen 4:3</div>
           <?php foreach ($full as $style_id => $style_text): ?>
             <div class="wallp-download__link"><?php print l($style_text, file_force_create_url(image_style_path($style_id, $url))); ?></div>
           <?php endforeach; ?>
+        </div>
+
+        <div class="wallp-download__manual">
+          <div class="wallp-download__manual-title">Обрезка вручную:</div>
+          <div id="manual-link" class="wallp-download__manual-link">&nbsp;</div>
+          <form id="manual-crop">
+            <label for="manual-width">Ширина:</label>
+            <input class="form-text" type="text" id="manual-width" name="manual-width" size="4" maxlength="4" required>
+            <label for="manual-height">Высота:</label>
+            <input class="form-text" type="text" id="manual-height" name="manual-height" size="4" maxlength="4" required>
+            <input class="form-submit" type="submit" id="manual-submit" value="Обрезать">
+          </form>
         </div>
 
       </div>

@@ -941,7 +941,7 @@ h6 {
   float: left;
 }
 .wallp--mobile.wallp--full .wallp__image {
-  width: 23%;
+  width: 28%;
   margin-right: 10px;
 }
 .wallp__icon-wrapper {
@@ -967,33 +967,39 @@ h6 {
   float: left;
   padding: 0 20px;
   overflow: hidden;
+  font-size: 14px;
 }
 .wallp-download__orig-title {
   float: left;
   margin-right: 8px;
 }
-.wallp-download__orig-size {
-  font-size: 14px;
-}
 .wallp-download__user {
-  margin: 12px 0;
+  margin: 8px 0;
 }
 .wallp-download__user-title {
   float: left;
   margin-right: 8px;
 }
-.wallp-download__user-size {
-  font-size: 14px;
-}
 .wallp-download__block {
-  margin: 12px 0;
+  margin: 8px 0;
   overflow: hidden;
 }
 .wallp-download__link {
   float: left;
   margin-right: 8px;
-  font-size: 14px;
 }
 .wallp-download__link:last-child {
   margin-right: 0;
+}
+.wallp-download__manual-link {
+  display: inline;
+  margin-left: 8px;
+  font-size: 14px;
+}
+.wallp-download__manual-title {
+  display: inline-block;
+}
+.wallp-download__manual .form-text {
+  padding-left: 3px;
+  width: 48px;
 }

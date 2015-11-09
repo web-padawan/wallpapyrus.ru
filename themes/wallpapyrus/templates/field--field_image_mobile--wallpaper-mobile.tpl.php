@@ -64,7 +64,7 @@
         );
       ?>
 
-      <div class="wallp-download" data-uri="<?php print file_uri_target($url); ?>">
+      <div class="wallp-download" data-uri="<?php print file_uri_target($url); ?>"  data-type="mobile">
 
         <div class="wallp-download__orig">
           <div class="wallp-download__origtitle">Оригинальный размер:</div>
@@ -77,7 +77,7 @@
         </div>
 
         <div class="wallp-download__block wallp-download__block--apple">
-          <div class="wallp-download__type">Apple: iPhone, iPad</div>
+          <div class="wallp-download__type">iPhone, iPad</div>
           <?php foreach ($apple as $style_id => $style_text): ?>
             <div class="wallp-download__link"><?php print l($style_text, file_force_create_url(image_style_path($style_id, $url))); ?></div>
           <?php endforeach; ?>
@@ -88,6 +88,18 @@
           <?php foreach ($android as $style_id => $style_text): ?>
             <div class="wallp-download__link"><?php print l($style_text, file_force_create_url(image_style_path($style_id, $url))); ?></div>
           <?php endforeach; ?>
+        </div>
+
+        <div class="wallp-download__manual">
+          <div class="wallp-download__manual-title">Обрезка вручную:</div>
+          <div id="manual-link" class="wallp-download__manual-link">&nbsp;</div>
+          <form id="manual-crop">
+            <label for="manual-width">Ширина:</label>
+            <input class="form-text" type="text" id="manual-width" name="manual-width" size="4" maxlength="4" required>
+            <label for="manual-height">Высота:</label>
+            <input class="form-text" type="text" id="manual-height" name="manual-height" size="4" maxlength="4" required>
+            <input class="form-submit" type="submit" id="manual-submit" value="Обрезать">
+          </form>
         </div>
 
       </div>
