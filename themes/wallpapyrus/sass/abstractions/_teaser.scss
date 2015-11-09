@@ -1,15 +1,18 @@
 %wallp-container {
-  @include nested(9);
+  @include nested(12);
   overflow: hidden;
 }
 
 %wallp-item {
-  @include span(3 of 9 split);
   position: relative;
   margin-top: 15px;
   padding: 4px;
   border: 1px solid $teaser-border;
   border-top-color: $teaser-top;
+  @include span(6 of 12 split);
+  @include breakpoint($md) {
+    @include span(4 of 12 split);
+  }
 }
 
 %wallp-node {

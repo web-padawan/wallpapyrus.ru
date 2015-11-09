@@ -16,7 +16,7 @@ video {
   height: auto;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 960px) {
   body.admin-menu.adminimal-menu:before {
     height: 0 !important;
   }
@@ -444,15 +444,24 @@ html {
 
 .search-results__item, .view-taxonomy-term .views-row,
 .view-front-page-content .views-row {
-  width: 31.11111%;
-  float: left;
-  margin-left: 1.11111%;
-  margin-right: 1.11111%;
   position: relative;
   margin-top: 15px;
   padding: 4px;
   border: 1px solid #2f2f2f;
   border-top-color: #c3964f;
+  width: 48.33333%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+}
+@media (min-width: 960px) {
+  .search-results__item, .view-taxonomy-term .views-row,
+  .view-front-page-content .views-row {
+    width: 31.66667%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
 }
 
 .search-results .node--wallpaper-desktop--teaser,
@@ -908,6 +917,11 @@ h6 {
 .block--views-categories-block .view-content > ul > li {
   width: 50%;
   float: left;
+}
+
+.view-taxonomy-term,
+.view-front-page-content {
+  padding-left: 5px;
 }
 
 .wallp {
