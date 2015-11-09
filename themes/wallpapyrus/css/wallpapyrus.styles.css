@@ -501,12 +501,6 @@ input[type="search"], textarea {
   -moz-appearance: none;
 }
 
-input[type="text"]:-webkit-autofill,
-input[type="password"]:-webkit-autofill,
-input[type="search"]:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 100px #fff inset;
-}
-
 textarea {
   border-style: inset;
   height: auto;

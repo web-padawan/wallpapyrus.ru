@@ -7,9 +7,6 @@ input[type="text"],
 input[type="password"],
 input[type="search"] {
   @extend %form-element;
-  &:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 100px #fff inset;
-  }
 }
 
 textarea {
