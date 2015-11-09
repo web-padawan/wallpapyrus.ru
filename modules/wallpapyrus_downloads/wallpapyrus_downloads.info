@@ -1,0 +1,8 @@
+name = Wallpapyrus: Downloads counter
+
+description = Подсчет количества скачиваний
+
+core = 7.x
+package = Wallpapyrus
+
+version = 7.x-1.0
