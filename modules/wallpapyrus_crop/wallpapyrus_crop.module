@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function wallpapyrus_crop_menu() {
+  $items['wallpapyrus_crop/%/%/%'] = array(
+    'page callback' => 'wallpapyrus_crop_ajax_callback',
+    'page arguments' => array(1, 2, 3),
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function wallpapyrus_crop_preprocess_node(&$variables) {
+  drupal_add_js(drupal_get_path('module', 'wallpapyrus_crop') . '/wallpapyrus_crop.js');
+  drupal_add_js(array('nid' => $variables['node']->nid), 'setting');
+}
+
+/**
+ * Ajax callback: crop image by nid.
+ */
+function wallpapyrus_crop_ajax_callback($nid, $w, $h) {
+  $node = node_load($nid);
+
+  if (isset($node) && $node->type == 'wallpaper_desktop') {
+    $img = $node->field_image_desktop[LANGUAGE_NONE][0];
+  }
+  elseif (isset($node) && $node->type == 'wallpaper_mobile') {
+    $img = $node->field_image_mobile[LANGUAGE_NONE][0];
+  }
+
+  $image = image_load($img['uri']);
+  image_scale_and_crop($image, $w, $h);
+
+  $destination = 'public://' . 'manual' . '/' . $w . 'x' . $h . '_' . $img['filename'] ;
+  image_save($image, $destination);
+
+  drupal_json_output(file_force_create_url($destination));
+}
