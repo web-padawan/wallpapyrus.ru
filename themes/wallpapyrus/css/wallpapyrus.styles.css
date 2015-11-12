@@ -894,11 +894,13 @@ h6 {
 }
 
 .block--views-categories-block,
+.block--views-colors-block,
 .block--tagclouds {
   margin-bottom: 10px;
   border: 1px solid #2f2f2f;
 }
 .block--views-categories-block .block__title,
+.block--views-colors-block .block__title,
 .block--tagclouds .block__title {
   border-bottom: 1px solid #2f2f2f;
   color: #dac797;
@@ -909,7 +911,9 @@ h6 {
   padding: 0 12px;
 }
 .block--views-categories-block .block__content,
+.block--views-colors-block .block__content,
 .block--tagclouds .block__content {
+  overflow: hidden;
   padding: 10px;
 }
 
@@ -942,6 +946,7 @@ h6 {
 }
 .wallp--full {
   padding-top: 16px;
+  padding-bottom: 8px;
   clear: both;
 }
 .wallp--full .wallp__image {
@@ -969,6 +974,26 @@ h6 {
   background: url('../images/generated/icons-s344fc2ca40.png') 0 -34px no-repeat;
   width: 24px;
   height: 24px;
+}
+.wallp-colors {
+  float: left;
+  margin-right: 8px;
+}
+.wallp-colors__label {
+  float: left;
+  margin-right: 4px;
+}
+.wallp-colors__thumb {
+  float: left;
+  margin-top: 3px;
+  margin-right: 4px;
+  width: 18px;
+  height: 18px;
+  text-decoration: none;
+}
+.wallp-colors__thumb:hover, .wallp-colors__thumb:active, .wallp-colors__thumb:focus {
+  border: solid 1px #c3964f;
+  text-decoration: none;
 }
 .wallp-download {
   width: 50%;

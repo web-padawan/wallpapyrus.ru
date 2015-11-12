@@ -1,4 +1,5 @@
 .block--views-categories-block,
+.block--views-colors-block,
 .block--tagclouds {
   margin-bottom: 10px;
   border: 1px solid $block-border;
@@ -14,6 +15,7 @@
   }
 
   .block__content {
+    overflow: hidden;
     padding: 10px;
   }
 }

@@ -9,6 +9,7 @@
 
   &--full {
     padding-top: $vert-spacing-unit / 1.5;
+    padding-bottom: $vert-spacing-unit / 3;
     clear: both;
     .wallp__image {
       width: 50%;
@@ -39,6 +40,31 @@
     }
     &--mobile {
       @include s('mobile');
+    }
+  }
+
+  &-colors {
+    float: left;
+    margin-right: 8px;
+
+    &__label {
+      float: left;
+      margin-right: 4px;
+    }
+
+    &__thumb {
+      float: left;
+      margin-top: 3px;
+      margin-right: 4px;
+      width: 18px;
+      height: 18px;
+      text-decoration: none;
+      &:hover,
+      &:active,
+      &:focus {
+        border: solid 1px $link-default;
+        text-decoration: none;
+      }
     }
   }
 
