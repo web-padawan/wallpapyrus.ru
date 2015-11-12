@@ -19,5 +19,9 @@ function wallpapyrus_preprocess_page(&$variables) {
       $new_title = 'Обои с тегом "' . $term->name . '"';
       drupal_set_title($new_title);
     }
+    if ($term->vocabulary_machine_name == 'colors') {
+      $new_title = 'Обои с цветом ' . $term->name;
+      drupal_set_title($new_title);
+    }
   }
 }
