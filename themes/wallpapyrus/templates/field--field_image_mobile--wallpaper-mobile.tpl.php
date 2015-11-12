@@ -79,14 +79,14 @@
         <div class="wallp-download__block wallp-download__block--apple">
           <div class="wallp-download__type">iPhone, iPad</div>
           <?php foreach ($apple as $style_id => $style_text): ?>
-            <div class="wallp-download__link"><?php print l($style_text, file_force_create_url(image_style_path($style_id, $url))); ?></div>
+            <?php print l($style_text, file_force_create_url(image_style_path($style_id, $url)), array('attributes' => array('class' => 'wallp-download__link'))); ?>
           <?php endforeach; ?>
         </div>
 
         <div class="wallp-download__block wallp-download__block--android">
           <div class="wallp-download__type">Google Android</div>
           <?php foreach ($android as $style_id => $style_text): ?>
-            <div class="wallp-download__link"><?php print l($style_text, file_force_create_url(image_style_path($style_id, $url))); ?></div>
+            <?php print l($style_text, file_force_create_url(image_style_path($style_id, $url)), array('attributes' => array('class' => 'wallp-download__link'))); ?>
           <?php endforeach; ?>
         </div>
 

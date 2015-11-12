@@ -76,19 +76,19 @@
         <div class="wallp-download__block wallp-download__block--wide">
           <div class="wallp-download__type">Выберите разрешение:</div>
           <?php foreach ($wide as $style_id => $style_text): ?>
-            <div class="wallp-download__link"><?php print l($style_text, file_force_create_url(image_style_path($style_id, $url))); ?></div>
+            <?php print l($style_text, file_force_create_url(image_style_path($style_id, $url)), array('attributes' => array('class' => 'wallp-download__link'))); ?>
           <?php endforeach; ?>
         </div>
 
         <div class="wallp-download__block wallp-download__block--hd">
           <?php foreach ($hd as $style_id => $style_text): ?>
-            <div class="wallp-download__link"><?php print l($style_text, file_force_create_url(image_style_path($style_id, $url))); ?></div>
+            <?php print l($style_text, file_force_create_url(image_style_path($style_id, $url)), array('attributes' => array('class' => 'wallp-download__link'))); ?>
           <?php endforeach; ?>
         </div>
 
         <div class="wallp-download__block wallp-download__block--full">
           <?php foreach ($full as $style_id => $style_text): ?>
-            <div class="wallp-download__link"><?php print l($style_text, file_force_create_url(image_style_path($style_id, $url))); ?></div>
+            <?php print l($style_text, file_force_create_url(image_style_path($style_id, $url)), array('attributes' => array('class' => 'wallp-download__link'))); ?>
           <?php endforeach; ?>
         </div>
 
