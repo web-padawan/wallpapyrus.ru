@@ -1,0 +1,8 @@
+name = Wallpapyrus: Color extract
+
+description = Определение основных цветов обоев
+
+core = 7.x
+package = Wallpapyrus
+
+version = 7.x-1.0

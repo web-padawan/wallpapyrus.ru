@@ -1,0 +1,56 @@
+<?php
+
+require 'vendor/autoload.php';
+
+use League\ColorExtractor\Client as ColorExtractor;
+
+/**
+ * Implements hook_node_presave().
+ */
+function wallpapyrus_color_extract_node_presave($node) {
+
+  if ($node->type == 'wallpaper_desktop') {
+    $fid = $node->field_image_desktop[LANGUAGE_NONE][0]['fid'];
+  }
+  elseif ($node->type == 'wallpaper_mobile') {
+    $fid = $node->field_image_mobile[LANGUAGE_NONE][0]['fid'];
+  }
+
+  $image_file = file_load($fid);
+  $url = file_create_url($image_file->uri);
+
+  if (!empty($url)) {
+    $client = new ColorExtractor;
+    $image = $client->loadJpeg($url);
+
+    $palette = $image->extract(5);
+
+    $i = 0;
+    foreach ($palette as $n => $color) {
+
+      $term = taxonomy_get_term_by_name($color);
+      $vobj = taxonomy_vocabulary_machine_name_load('colors');
+      $vid = $vobj->vid;
+
+      if ($term == array()) {
+        $taxonomy = new stdClass();
+        $taxonomy->name = $color;
+        $taxonomy->vid = $vid;
+
+        taxonomy_term_save($taxonomy);
+        $term = taxonomy_get_term_by_name($color);
+      }
+
+      $tid = key($term);
+
+      $node->field_tag_colors[LANGUAGE_NONE][$i] = array(
+        'tid' => $tid,
+        'vid' => $vid,
+        'name' => $color
+      );
+
+      $i++;
+    }
+  }
+}
+
