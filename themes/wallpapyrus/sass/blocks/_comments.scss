@@ -2,11 +2,12 @@
 
   &__title {
     @include adjust-font-size-to(16px);
-    margin: $vert-spacing-unit 0;
+    margin-bottom: $vert-spacing-unit / 2;
   }
 
   &__form-title {
     @include adjust-font-size-to(16px);
+    margin-bottom: $vert-spacing-unit / 2;
   }
 
   .new {
@@ -20,6 +21,10 @@
   .page-comment & {
     margin: $vert-spacing-unit 0;
     padding-left: 10px;
+  }
+
+  &-add {
+    display: none;
   }
 
   h3 {

@@ -3,7 +3,7 @@
 .block--tagclouds {
   margin-bottom: $vert-spacing-unit;
   border: 1px solid $block-border;
-  border-radius: 4px;
+  // border-radius: 4px;
 
   .block__title {
     @extend %block-title;
@@ -11,6 +11,7 @@
   }
 
   .block__content {
+    background: $block-content;
     overflow: hidden;
     padding: 10px;
   }

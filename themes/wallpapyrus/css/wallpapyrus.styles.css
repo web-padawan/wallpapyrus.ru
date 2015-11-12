@@ -452,7 +452,7 @@ html {
   padding: 10px 15px;
   font-size: 16px;
   line-height: 16px;
-  background: #222;
+  background: #1f1f1f;
   color: #fff;
   font-weight: normal;
 }
@@ -722,13 +722,14 @@ h6 {
   font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem;
-  margin: 24px 0;
+  margin-bottom: 12px;
 }
 .comments__form-title {
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem;
+  margin-bottom: 12px;
 }
 .comments .new {
   display: none;
@@ -740,6 +741,9 @@ h6 {
 .page-comment .comment {
   margin: 24px 0;
   padding-left: 10px;
+}
+.comment-add {
+  display: none;
 }
 .comment h3 {
   display: none;
@@ -825,9 +829,6 @@ h6 {
   width: 24px;
   height: 24px;
   text-indent: 28px;
-}
-.node--full .node__links {
-  margin-top: 24px;
 }
 .node--full .field {
   float: left;
@@ -973,7 +974,6 @@ h6 {
 .block--tagclouds {
   margin-bottom: 24px;
   border: 1px solid #464545;
-  border-radius: 4px;
 }
 .block--views-categories-block .block__title,
 .block--views-colors-block .block__title,
@@ -983,6 +983,7 @@ h6 {
 .block--views-categories-block .block__content,
 .block--views-colors-block .block__content,
 .block--tagclouds .block__content {
+  background: transparent;
   overflow: hidden;
   padding: 10px;
 }

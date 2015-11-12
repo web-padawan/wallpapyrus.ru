@@ -22,7 +22,7 @@
   padding: 10px 15px;
   font-size: 16px;
   line-height: 16px;
-  background: #222;
+  background: #1f1f1f;
   color: #fff;
   font-weight: normal;
 }
@@ -62,7 +62,6 @@
 }
 .content__title {
   border: 1px solid #464545;
-  border-radius: 4px;
 }
 
 .sidebar {
