@@ -21,10 +21,10 @@
     </thead>
   <?php endif; ?>
   <tbody>
-  <?php foreach ($rows as $delta => $row): ?>
-    <tr<?php print $row_attributes[$delta]; ?>>
+  <?php foreach ($rows as $row_number => $row): ?>
+    <tr<?php if ($row_classes[$row_number]) print ' class="' . $row_classes[$row_number] .'"'; ?>>
       <?php foreach ($row as $field => $content): ?>
-        <td<?php print $field_attributes[$field][$delta]; ?>>
+        <td<?php if ($field_classes[$field][$row_count]) { print ' class="'. $field_classes[$field][$row_count] . '" '; } ?><?php print drupal_attributes($field_attributes[$field][$row_count]); ?>>
           <?php print $content; ?>
         </td>
       <?php endforeach; ?>
