@@ -1,17 +1,13 @@
 .block--views-categories-block,
 .block--views-colors-block,
 .block--tagclouds {
-  margin-bottom: 10px;
+  margin-bottom: $vert-spacing-unit;
   border: 1px solid $block-border;
+  border-radius: 4px;
 
   .block__title {
+    @extend %block-title;
     border-bottom: 1px solid $block-border;
-    color: $block-title;
-    background: $block-header;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 32px;
-    padding: 0 12px;
   }
 
   .block__content {

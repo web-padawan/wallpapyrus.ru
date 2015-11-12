@@ -51,14 +51,7 @@ input[type="submit"] {
 }
 
 .form-submit {
-  padding: 7px;
-  font-size: 14px;
-  text-align: center;
-  background: $btn-ok-bg;
-  color: $btn-ok-text;
-  &:hover {
-    background: darken($btn-ok-bg, 10%);
-  }
+  @extend %btn-ok;
 }
 
 .form-textarea {

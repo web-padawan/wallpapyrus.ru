@@ -10,9 +10,11 @@
     }
 
     .node__submitted {
-      top: 56px;
-      background: rgba($date-bg, 0.9);
-      color: $date-color;
+      position: absolute;
+      top: 16px;
+      font-size: 14px;
+      @include s('calendar');
+      text-indent: 28px;
     }
 
     .node__links {
@@ -22,10 +24,10 @@
     .field {
       float: left;
       overflow: hidden;
-      margin-right: 12px;
+      margin-right: $horz-spacing-unit;
       .field__label {
         float: left;
-        margin-right: 4px;
+        margin-right: $horz-spacing-unit / 2;
         font-size: 14px;
       }
       .field__items {
@@ -44,14 +46,47 @@
 
   &--teaser {
     .node__submitted {
+      @extend %wallp-date;
       width: 100%;
       bottom: 0;
       text-align: center;
     }
   }
+}
 
-  &__submitted {
-    @extend %wallp-date;
 
+.field {
+  &--name-field-wallpaper-rating {
+    .field__label {
+      @include s('rating');
+      width: 24px;
+      height: 24px;
+      color: transparent;
+    }
+  }
+  &--name-field-download-count {
+    margin-left: 110px;
+    .field__label {
+      @include s('download');
+      width: 24px;
+      height: 24px;
+      color: transparent;
+    }
+  }
+  &--name-field-tag-categories {
+    .field__label {
+      @include s('category');
+      width: 24px;
+      height: 24px;
+      color: transparent;
+    }
+  }
+  &--name-field-tags {
+    .field__label {
+      @include s('tags');
+      width: 24px;
+      height: 24px;
+      color: transparent;
+    }
   }
 }

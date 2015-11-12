@@ -8,8 +8,7 @@
   }
 
   &--full {
-    padding-top: $vert-spacing-unit / 1.5;
-    padding-bottom: $vert-spacing-unit / 3;
+    padding-top: $vert-spacing-unit;
     clear: both;
     .wallp__image {
       width: 50%;
@@ -50,6 +49,10 @@
     &__label {
       float: left;
       margin-right: 4px;
+      @include s('palette');
+      width: 24px;
+      height: 24px;
+      color: transparent;
     }
 
     &__thumb {
@@ -82,6 +85,10 @@
       }
     }
 
+    &__type {
+      margin-bottom: $vert-spacing-unit / 3;
+    }
+
     &__user {
       margin: $vert-spacing-unit / 3 0;
       &-title {
@@ -96,8 +103,11 @@
     }
 
     &__link {
-      float: left;
-      margin-right: 8px;
+      @extend %btn-link;
+      @extend %btn-sm;
+      width: 80px;
+      margin-right: 3px;
+
       &:last-child {
         margin-right: 0;
       }

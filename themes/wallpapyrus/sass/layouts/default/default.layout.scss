@@ -5,6 +5,7 @@
 @import '../../utils/_colors.scss';
 @import '../../utils/_fonts.scss';
 @import '../../utils/_grid.scss';
+@import '../../abstractions/_block.scss';
 
 .topline {
   &__container {
@@ -56,11 +57,9 @@
     padding-right: 0.75%;
   }
   &__title {
-    @include adjust-font-size-to(16px);
-    padding: 4px 0 4px 10px;
-    background: $block-header;
+    @extend %block-title;
     border: 1px solid $block-border;
-    color: $block-title;
+    border-radius: 4px;
   }
 }
 

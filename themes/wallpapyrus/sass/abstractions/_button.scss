@@ -1,0 +1,38 @@
+%btn {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 6px 9px;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  font-size: 13px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+%btn-sm {
+  padding: 2px 5px;
+}
+
+%btn-ok {
+  @extend %btn;
+
+  background: $btn-ok-bg;
+  color: $btn-ok-text;
+  &:hover {
+    background: darken($btn-ok-bg, 10%);
+  }
+}
+
+%btn-link {
+  @extend %btn;
+
+  background: $btn-link-bg;
+  &:hover {
+    background: darken($btn-link-bg, 5%);
+    text-decoration: underline;
+  }
+}

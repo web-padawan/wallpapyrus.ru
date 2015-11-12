@@ -18,6 +18,15 @@
   clear: both;
 }
 
+.content__title {
+  padding: 10px 15px;
+  font-size: 16px;
+  line-height: 16px;
+  background: #222;
+  color: #fff;
+  font-weight: normal;
+}
+
 .header__title {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -33,7 +42,7 @@
 }
 
 .main__container {
-  background: #0c0401;
+  background: #0e0e0e;
 }
 
 .content {
@@ -52,12 +61,8 @@
   padding-right: 0.75%;
 }
 .content__title {
-  font-size: 1em;
-  line-height: 1.5em;
-  padding: 4px 0 4px 10px;
-  background: #190500;
-  border: 1px solid #2f2f2f;
-  color: #dac797;
+  border: 1px solid #464545;
+  border-radius: 4px;
 }
 
 .sidebar {
