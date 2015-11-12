@@ -16,6 +16,15 @@ video {
   height: auto;
 }
 
+@font-face {
+  font-family: "Lato";
+  src: url('../fonts/lato-regular.woff?1447308188') format('woff');
+}
+@font-face {
+  font-family: "Lato";
+  src: url('../fonts/lato-bold.woff?1447308188') format('woff');
+  font-weight: bold;
+}
 @media (max-width: 960px) {
   body.admin-menu.adminimal-menu:before {
     height: 0 !important;
@@ -498,6 +507,7 @@ html {
 body {
   background: fixed #0e0e0e url('../images/body.jpg?1358697891') center top repeat-x;
   color: #9c9c9c;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 
 input[type="text"],

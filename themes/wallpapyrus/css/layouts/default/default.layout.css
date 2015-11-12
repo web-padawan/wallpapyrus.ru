@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Lato";
+  src: url('../../../fonts/lato-regular.woff?1447308188') format('woff');
+}
+@font-face {
+  font-family: "Lato";
+  src: url('../../../fonts/lato-bold.woff?1447308188') format('woff');
+  font-weight: bold;
+}
 .topline__container, .header__container, .nav__container, .main__container, .footer__container {
   max-width: 1140px;
   margin-left: auto;
@@ -18,17 +27,9 @@
 .header__title a {
   display: block;
 }
-.header__title a span {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  text-transform: capitalize;
-  background-image: url('../../../images/logo.png?1446706829');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 250px;
-  height: 56px;
-  display: block;
+.header__title a:hover, .header__title a:active, .header__title a:focus {
+  text-decoration: none;
+  color: #a67c39;
 }
 
 .main__container {

@@ -23,11 +23,11 @@
     padding-left: 10px;
     a {
       display: block;
-      span {
-        @include replace-text('logo.png');
-        width: 250px;
-        height: 56px;
-        display: block;
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+        color: darken($link-default, 10%);
       }
     }
   }

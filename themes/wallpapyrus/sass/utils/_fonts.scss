@@ -1,2 +1,7 @@
-// @include font-face('Intro-Regular', font-files('Intro-Regular.ttf'));
-// $intro-regular : 'Intro-Regular', Helvetica, Arial, sans-serif;
+// regular
+@include font-face('Lato', font-files('lato-regular.woff', woff));
+
+// bold
+@include font-face('Lato', font-files('lato-bold.woff', woff), $weight: bold);
+
+$lato : 'Lato', Helvetica, Arial, sans-serif;
