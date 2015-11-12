@@ -897,11 +897,9 @@ h6 {
 .block--tagclouds {
   margin-bottom: 10px;
   border: 1px solid #2f2f2f;
-  border-top: 0;
 }
 .block--views-categories-block .block__title,
 .block--tagclouds .block__title {
-  border-top: 3px solid #2f2f2f;
   border-bottom: 1px solid #2f2f2f;
   color: #dac797;
   background: #190500;

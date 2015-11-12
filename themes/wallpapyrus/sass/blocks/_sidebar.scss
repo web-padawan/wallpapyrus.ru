@@ -2,10 +2,8 @@
 .block--tagclouds {
   margin-bottom: 10px;
   border: 1px solid $block-border;
-  border-top: 0;
 
   .block__title {
-    border-top: 3px solid $block-border;
     border-bottom: 1px solid $block-border;
     color: $block-title;
     background: $block-header;
