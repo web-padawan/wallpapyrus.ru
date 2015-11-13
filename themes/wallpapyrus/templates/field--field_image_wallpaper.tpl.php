@@ -48,7 +48,7 @@
         <div class="wallp-download__select">
           <div class="wallp-download__type">Для ПК и ноутбуков</div>
           <form id="desktop">
-            <select id="desktop-list">
+            <select id="desktop-list" class="form-select">
               <option value="1" disabled selected="selected">Выберите размер</option>
                 <optgroup label="Widescreen 16:10">
                  <option value="2560x1600">2560x1600</option>
@@ -80,7 +80,7 @@
         <div class="wallp-download__select">
           <div class="wallp-download__type">Для мобильных устройств</div>
           <form id="mobile">
-            <select id="mobile-list">
+            <select id="mobile-list" class="form-select">
               <option value="1" disabled selected="selected">Выберите размер</option>
               <optgroup label="Apple Devices">
                 <option value="320x480">320x480 iPhone 3GS</option>

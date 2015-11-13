@@ -25,8 +25,18 @@
       top: 1px;
       padding-left: 10px;
       border: none;
+      border-radius: 0;
       outline: none;
-      @include input-placeholder { font-style: italic };
+      color: $text-default;
+      background: transparent;
+      &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 100px $search-bg inset;
+        -webkit-text-fill-color: $text-default!important;
+      }
+      @include input-placeholder {
+        color: $text-default;
+        font-style: italic;
+      }
     }
     .form-actions {
       position: relative;

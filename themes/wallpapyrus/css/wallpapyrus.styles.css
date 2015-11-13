@@ -573,53 +573,35 @@ input[type="submit"] {
   text-align: center;
 }
 
-.form-text {
-  padding: 3px;
-  padding-left: 10px;
-  border: solid 1px #2f2f2f;
-  outline: none;
-  background: #0e0e0e;
-  color: #9c9c9c;
+.form-text, .form-textarea, .form-select {
+  display: inline-block;
+  padding: 3px 5px;
+  vertical-align: middle;
+  font-size: 15px;
+  color: #464545;
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
 }
+
 .form-text:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 100px #0e0e0e inset;
-  -webkit-text-fill-color: #9c9c9c !important;
-}
-.form-text:focus {
-  border: solid 1px #b48333;
+  -webkit-box-shadow: 0 0 0 100px #fff inset;
+  -webkit-text-fill-color: #464545 !important;
 }
 .form-text.error {
   border: 1px solid red;
 }
-.form-text.error:focus {
-  border: solid 1px #b48333;
-}
 .form-text:-moz-placeholder {
-  color: #9c9c9c;
-  font-size: 14px;
+  color: #464545;
 }
 .form-text::-moz-placeholder {
-  color: #9c9c9c;
-  font-size: 14px;
+  color: #464545;
 }
 .form-text:-ms-input-placeholder {
-  color: #9c9c9c;
-  font-size: 14px;
+  color: #464545;
 }
 .form-text::-webkit-input-placeholder {
-  color: #9c9c9c;
-  font-size: 14px;
-}
-
-.form-textarea {
-  resize: none;
-  background: #0e0e0e;
-  color: #9c9c9c;
-  border: solid 1px #2f2f2f;
-}
-.form-textarea:focus {
-  outline: none;
-  border: solid 1px #b48333;
+  color: #464545;
 }
 
 .messages {
@@ -922,18 +904,29 @@ h6 {
   top: 1px;
   padding-left: 10px;
   border: none;
+  border-radius: 0;
   outline: none;
+  color: #9c9c9c;
+  background: transparent;
+}
+.header .search-form .form-text:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 100px #0e0e0e inset;
+  -webkit-text-fill-color: #9c9c9c !important;
 }
 .header .search-form .form-text:-moz-placeholder {
+  color: #9c9c9c;
   font-style: italic;
 }
 .header .search-form .form-text::-moz-placeholder {
+  color: #9c9c9c;
   font-style: italic;
 }
 .header .search-form .form-text:-ms-input-placeholder {
+  color: #9c9c9c;
   font-style: italic;
 }
 .header .search-form .form-text::-webkit-input-placeholder {
+  color: #9c9c9c;
   font-style: italic;
 }
 .header .search-form .form-actions {

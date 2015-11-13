@@ -24,29 +24,28 @@ input[type="submit"] {
   text-align: center;
 }
 
+%form-control {
+  display: inline-block;
+  padding: 3px 5px;
+  vertical-align: middle;
+  font-size: 15px;
+  color: $control-text;
+  background: $control-bg;
+  border: 1px solid $control-border;
+  border-radius: 4px;
+}
+
 .form-text {
-  padding: 3px;
-  padding-left: 10px;
-  border: solid 1px $input-border;
-  outline: none;
-  background: $input-bg;
-  color: $input-text;
+  @extend %form-control;
   &:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 100px $input-bg inset;
-    -webkit-text-fill-color: $input-text!important;
-  }
-  &:focus {
-    border: solid 1px $input-outline;
+    -webkit-box-shadow: 0 0 0 100px $control-bg inset;
+    -webkit-text-fill-color: $control-text!important;
   }
   &.error {
     border: 1px solid red;
-    &:focus {
-      border: solid 1px $input-outline;
-    }
   }
   @include input-placeholder {
-    color: $input-text;
-    font-size: 14px;
+    color: $control-text;
   }
 }
 
@@ -55,12 +54,9 @@ input[type="submit"] {
 }
 
 .form-textarea {
-  resize: none;
-  background: $input-bg;
-  color: $input-text;
-  border: solid 1px $input-border;
-  &:focus {
-    outline: none;
-    border: solid 1px $input-outline;
-  }
+  @extend %form-control;
+}
+
+.form-select {
+  @extend %form-control;
 }
