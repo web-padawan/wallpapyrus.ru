@@ -1,16 +1,17 @@
 <?php foreach ($items as $delta => $item): ?>
 
-  <?php if ($element['#view_mode'] === 'teaser'): ?>
+  <?php
+    $node = $element['#object'];
+    $view = $element['#view_mode'];
+  ?>
+
+  <?php if ($view === 'teaser'): ?>
     <div class="wallp wallp--teaser">
   <?php else: ?>
     <div class="wallp wallp--full">
   <?php endif; ?>
 
-    <?php
-      $node = $element['#object'];
-    ?>
-
-    <?php if ($element['#view_mode'] === 'teaser'): ?>
+    <?php if ($view === 'teaser'): ?>
       <a class="wallp__link" href="/node/<?php print $node->nid ?>" title="<?php print $node->title ?>">
     <?php endif; ?>
 
@@ -19,19 +20,19 @@
         $url = $item['#item']['uri'];
         $imgprops = image_get_info($url);
         $image = array(
-          'style_name' => 'preview_480x300',
+          'style_name' => ($view === 'teaser') ? 'preview_480x300' : 'preview_650x405',
           'path' => $url
         );
         print theme('image_style', $image);
       ?>
     </div>
 
-    <?php if ($element['#view_mode'] === 'teaser'): ?>
+    <?php if ($view === 'teaser'): ?>
         <div class="wallp__title"><?php print $node->title ?></div>
       </a>
     <?php endif; ?>
 
-    <?php if ($element['#view_mode'] === 'full'): ?>
+    <?php if ($view === 'full'): ?>
 
       <div class="wallp-download" data-uri="<?php print file_uri_target($url); ?>" data-type="desktop">
 
@@ -46,7 +47,7 @@
         </div>
 
         <div class="wallp-download__select">
-          <div class="wallp-download__type">Для ПК и ноутбуков</div>
+          <div class="wallp-download__type">Для компьютера (ноутбука)</div>
           <form id="desktop">
             <select id="desktop-list" class="form-select">
               <option value="1" disabled selected="selected">Выберите размер</option>
@@ -78,7 +79,7 @@
         </div>
 
         <div class="wallp-download__select">
-          <div class="wallp-download__type">Для мобильных устройств</div>
+          <div class="wallp-download__type">Для телефона (планшета)</div>
           <form id="mobile">
             <select id="mobile-list" class="form-select">
               <option value="1" disabled selected="selected">Выберите размер</option>
