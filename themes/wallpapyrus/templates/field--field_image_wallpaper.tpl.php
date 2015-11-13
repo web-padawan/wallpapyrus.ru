@@ -39,7 +39,7 @@
 
           <div class="wallp-download__form wallp-download__form--desktop">
             <form id="desktop">
-              <label class="wallp-download__label wallp-download__label--desktop" title="Обои для ПК и ноутбука" for="desktop-list">&nbsp;</label>
+              <label class="wallp-download__icon wallp-download__icon--desktop" title="Обои для ПК и ноутбука" for="desktop-list">&nbsp;</label>
               <select id="desktop-list" class="form-select">
                 <option value="1" disabled selected="selected">Выберите размер</option>
                   <optgroup label="Widescreen 16:10">
@@ -71,7 +71,7 @@
 
           <div class="wallp-download__form wallp-download__form--mobile">
             <form id="mobile">
-              <label class="wallp-download__label wallp-download__label--mobile"  title="Обои для мобильных устройств" for="mobile-list">&nbsp;</label>
+              <label class="wallp-download__icon wallp-download__icon--mobile"  title="Обои для мобильных устройств" for="mobile-list">&nbsp;</label>
               <select id="mobile-list" class="form-select">
                 <option value="1" disabled selected="selected">Выберите размер</option>
                 <optgroup label="Apple Devices">
@@ -97,28 +97,31 @@
           </div>
         </div>
 
-        <div class="wallp-download__orig">
-          <div class="wallp-download__orig-title">Оригинал:</div>
-          <div class="wallp-download__orig-size"><?php print l($imgprops['width'] . 'x' . $imgprops['height'], file_force_create_url($url)); ?></div>
-        </div>
+        <div class="wallp-download__row">
 
-        <div class="wallp-download__user">
-          <div class="wallp-download__user-title">Ваше разрешение:</div>
-          <a class="wallp-download__user-size" href="#" id="user-size">&nbsp;</a>
-        </div>
+          <div class="wallp-download__orig">
+            <div class="wallp-download__orig-icon" title="Оригинальное изображение">&nbsp;</div>
+            <div class="wallp-download__orig-size">
+              <?php print l($imgprops['width'] . 'x' . $imgprops['height'], file_force_create_url($url), array('attributes' => array('title' => 'Оригинальное изображение'))); ?>
+            </div>
+          </div>
 
-        <div class="wallp-download__manual">
-          <div class="wallp-download__manual-title">Обрезка вручную:</div>
-          <div id="manual-link" class="wallp-download__manual-link">&nbsp;</div>
-          <form id="manual-crop">
-            <label for="manual-width">Ширина:</label>
-            <input class="form-text" type="text" id="manual-width" name="manual-width" size="4" maxlength="4" required>
-            <label for="manual-height">Высота:</label>
-            <input class="form-text" type="text" id="manual-height" name="manual-height" size="4" maxlength="4" required>
-            <input class="form-submit" type="submit" id="manual-submit" value="Обрезать">
-          </form>
-        </div>
+          <div class="wallp-download__user">
+            <div class="wallp-download__user-icon" title="Ваше разрешение">&nbsp;</div>
+            <a class="wallp-download__user-size" href="#" id="user-size" title="Ваше разрешение">&nbsp;</a>
+          </div>
 
+          <div class="wallp-download__manual">
+            <div class="wallp-download__manual-icon" title="Произвольная обрезка">&nbsp;</div>
+            <div id="manual-link" class="wallp-download__manual-link">&nbsp;</div>
+            <form id="manual-crop" class="wallp-download__manual-form">
+              <input class="form-text" type="text" id="manual-width" name="manual-width" size="4" maxlength="4" placeholder="Ширина" required>
+              <label>x</label>
+              <input class="form-text" type="text" id="manual-height" name="manual-height" size="4" maxlength="4" placeholder="Высота" required>
+              <input class="form-submit" type="submit" id="manual-submit" value="Обрезать">
+            </form>
+          </div>
+        </div>
         <a class="wallp-download__invisible" id="download-link">&nbsp;</a>
 
       </div>
