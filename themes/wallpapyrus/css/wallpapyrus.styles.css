@@ -877,7 +877,7 @@ h6 {
   margin-left: 1rem;
 }
 .field--name-field-tag-categories .field__label {
-  background: url('../images/generated/icons-se145f05a1c.png') 0 0 no-repeat;
+  background: url('../images/generated/icons-s0d9b819cff.png') 0 0 no-repeat;
   width: 24px;
   height: 24px;
   width: 24px;
@@ -885,7 +885,7 @@ h6 {
   color: transparent;
 }
 .field--name-field-tags .field__label {
-  background: url('../images/generated/icons-se145f05a1c.png') 0 -174px no-repeat;
+  background: url('../images/generated/icons-s0d9b819cff.png') 0 -242px no-repeat;
   width: 24px;
   height: 24px;
   width: 24px;
@@ -968,7 +968,7 @@ h6 {
   background: #3f3f3f;
 }
 .header .search-form .form-submit {
-  background: url('../images/generated/icons-se145f05a1c.png') 0 -136px no-repeat;
+  background: url('../images/generated/icons-s0d9b819cff.png') 0 -204px no-repeat;
   width: 28px;
   height: 28px;
   padding: 0;
@@ -1054,7 +1054,7 @@ h6 {
 .wallp-colors__label {
   float: left;
   margin-right: 4px;
-  background: url('../images/generated/icons-se145f05a1c.png') 0 -102px no-repeat;
+  background: url('../images/generated/icons-s0d9b819cff.png') 0 -136px no-repeat;
   width: 24px;
   height: 24px;
   width: 24px;
@@ -1082,6 +1082,7 @@ h6 {
   font-size: 13px;
 }
 .wallp-download__row {
+  margin: 12px 0 24px 0;
   overflow: hidden;
 }
 .wallp-download__form--desktop {
@@ -1090,32 +1091,51 @@ h6 {
 .wallp-download__form--mobile {
   float: right;
 }
-.wallp-download__label {
+.wallp-download__icon {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 3px;
   width: 24px;
   height: 24px;
 }
-.wallp-download__label--desktop {
-  background: url('../images/generated/icons-se145f05a1c.png') 0 -34px no-repeat;
+.wallp-download__icon--desktop {
+  background: url('../images/generated/icons-s0d9b819cff.png') 0 -68px no-repeat;
   width: 24px;
   height: 24px;
 }
-.wallp-download__label--mobile {
-  background: url('../images/generated/icons-se145f05a1c.png') 0 -68px no-repeat;
+.wallp-download__icon--mobile {
+  background: url('../images/generated/icons-s0d9b819cff.png') 0 -102px no-repeat;
   width: 24px;
   height: 24px;
 }
-.wallp-download__orig-title {
+.wallp-download__orig {
   float: left;
-  margin-right: 8px;
+}
+.wallp-download__orig-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background: url('../images/generated/icons-s0d9b819cff.png') 0 -170px no-repeat;
+  width: 24px;
+  height: 24px;
+}
+.wallp-download__orig-size {
+  display: inline-block;
+  vertical-align: middle;
 }
 .wallp-download__user {
-  margin: 8px 0;
-}
-.wallp-download__user-title {
   float: left;
-  margin-right: 8px;
+  margin-left: 1rem;
+}
+.wallp-download__user-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background: url('../images/generated/icons-s0d9b819cff.png') 0 -276px no-repeat;
+  width: 24px;
+  height: 24px;
 }
 .wallp-download__block {
   margin: 8px 0;
@@ -1128,16 +1148,26 @@ h6 {
 .wallp-download__link:last-child {
   margin-right: 0;
 }
-.wallp-download__manual-link {
-  display: inline;
-  margin-left: 8px;
-  font-size: 14px;
+.wallp-download__manual {
+  float: right;
 }
-.wallp-download__manual-title {
+.wallp-download__manual-link {
   display: inline-block;
-  margin-bottom: 8px;
+  visibility: hidden;
+}
+.wallp-download__manual-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background: url('../images/generated/icons-s0d9b819cff.png') 0 -34px no-repeat;
+  width: 24px;
+  height: 24px;
+}
+.wallp-download__manual-form {
+  display: inline-block;
 }
 .wallp-download__manual .form-text {
-  padding-left: 3px;
-  width: 48px;
+  width: 64px;
+  font-size: 13px;
 }

@@ -60,6 +60,7 @@
     }
 
     &__row {
+      margin: $vert-spacing-unit / 2 0 $vert-spacing-unit 0;
       overflow: hidden;
     }
 
@@ -72,8 +73,9 @@
       }
     }
 
-    &__label {
+    &__icon {
       display: inline-block;
+      vertical-align: middle;
       margin-right: 3px;
       width: 24px;
       height: 24px;
@@ -87,17 +89,31 @@
     }
 
     &__orig {
-      &-title {
-        float: left;
-        margin-right: 8px;
+      float: left;
+
+      &-icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
+        @include s('picture');
+      }
+      &-size {
+        display: inline-block;
+        vertical-align: middle;
       }
     }
 
     &__user {
-      margin: $vert-spacing-unit / 3 0;
-      &-title {
-        float: left;
-        margin-right: 8px;
+      float: left;
+      margin-left: $horz-spacing-unit;
+
+      &-icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
+        @include s('user');
       }
     }
 
@@ -118,18 +134,25 @@
     }
 
     &__manual {
+      float: right;
+
       &-link {
-        display: inline;
-        margin-left: 8px;
-        font-size: 14px;
-      }
-      &-title {
         display: inline-block;
-        margin-bottom: $vert-spacing-unit / 3;
+        visibility: hidden;
+      }
+      &-icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
+        @include s('cut');
+      }
+      &-form {
+        display: inline-block;
       }
       .form-text {
-        padding-left: 3px;
-        width: 48px;
+        width: 64px;
+        font-size: 13px;
       }
     }
   }
