@@ -552,6 +552,10 @@ body {
   font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 
+img {
+  vertical-align: top;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="search"], textarea {
@@ -801,12 +805,13 @@ h6 {
 }
 .node--full .node__submitted {
   position: absolute;
-  top: 16px;
-  font-size: 14px;
-  background: url('../images/generated/icons-sb40e45c366.png') 0 0 no-repeat;
-  width: 24px;
-  height: 24px;
-  text-indent: 28px;
+  top: 60px;
+  left: 40px;
+  font-size: 13px;
+  padding: 3px 6px;
+  border-bottom-right-radius: 5px;
+  color: #b6b6b6;
+  text-shadow: #0c0401 1px 1px 1px;
 }
 .node--full .field {
   float: left;
@@ -816,11 +821,9 @@ h6 {
 .node--full .field .field__label {
   float: left;
   margin-right: 0.5rem;
-  font-size: 14px;
 }
 .node--full .field .field__items {
   float: left;
-  font-size: 14px;
 }
 .node--full .field .field__item {
   float: left;
@@ -835,27 +838,30 @@ h6 {
   text-align: center;
 }
 
+.field--name-field-wallpaper-rating {
+  position: absolute;
+  right: 20px;
+  top: 60px;
+}
 .field--name-field-wallpaper-rating .field__label {
-  background: url('../images/generated/icons-sb40e45c366.png') 0 -136px no-repeat;
-  width: 24px;
-  height: 24px;
-  width: 24px;
-  height: 24px;
-  color: transparent;
+  display: none;
 }
 .field--name-field-download-count {
-  margin-left: 110px;
+  position: absolute;
+  top: 87px;
+  left: 45px;
+  font-size: 13px;
+  color: #b6b6b6;
+  text-shadow: #0e0e0e 1px 1px 1px;
 }
 .field--name-field-download-count .field__label {
-  background: url('../images/generated/icons-sb40e45c366.png') 0 -68px no-repeat;
-  width: 24px;
-  height: 24px;
-  width: 24px;
-  height: 24px;
-  color: transparent;
+  margin-right: 3px;
+}
+.field--name-field-tag-categories {
+  margin-left: 1rem;
 }
 .field--name-field-tag-categories .field__label {
-  background: url('../images/generated/icons-sb40e45c366.png') 0 -34px no-repeat;
+  background: url('../images/generated/icons-sa31db2ec05.png') 0 0 no-repeat;
   width: 24px;
   height: 24px;
   width: 24px;
@@ -863,7 +869,7 @@ h6 {
   color: transparent;
 }
 .field--name-field-tags .field__label {
-  background: url('../images/generated/icons-sb40e45c366.png') 0 -208px no-repeat;
+  background: url('../images/generated/icons-sa31db2ec05.png') 0 -106px no-repeat;
   width: 24px;
   height: 24px;
   width: 24px;
@@ -940,7 +946,7 @@ h6 {
   background: #3f3f3f;
 }
 .header .search-form .form-submit {
-  background: url('../images/generated/icons-sb40e45c366.png') 0 -170px no-repeat;
+  background: url('../images/generated/icons-sa31db2ec05.png') 0 -68px no-repeat;
   width: 28px;
   height: 28px;
   padding: 0;
@@ -1005,21 +1011,23 @@ h6 {
   margin-bottom: 24px;
 }
 .wallp--full {
-  padding-top: 24px;
   clear: both;
 }
 .wallp--full .wallp__image {
-  width: 50%;
-  float: left;
+  margin: 12px auto;
+  max-width: 95%;
+  padding: 7px;
+  border: solid 1px #464545;
+  text-align: center;
 }
 .wallp-colors {
-  float: left;
-  margin-right: 8px;
+  float: right;
+  margin-right: 1rem;
 }
 .wallp-colors__label {
   float: left;
   margin-right: 4px;
-  background: url('../images/generated/icons-sb40e45c366.png') 0 -102px no-repeat;
+  background: url('../images/generated/icons-sa31db2ec05.png') 0 -34px no-repeat;
   width: 24px;
   height: 24px;
   width: 24px;

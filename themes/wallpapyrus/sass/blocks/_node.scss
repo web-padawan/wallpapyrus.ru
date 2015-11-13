@@ -11,10 +11,13 @@
 
     .node__submitted {
       position: absolute;
-      top: 16px;
-      font-size: 14px;
-      @include s('calendar');
-      text-indent: 28px;
+      top: 60px;
+      left: 40px;
+      font-size: 13px;
+      padding: 3px 6px;
+      border-bottom-right-radius: 5px;
+      color: $text-lighten;
+      text-shadow: $text-shadow 1px 1px 1px;
     }
 
     .field {
@@ -24,11 +27,9 @@
       .field__label {
         float: left;
         margin-right: $horz-spacing-unit / 2;
-        font-size: 14px;
       }
       .field__items {
         float: left;
-        font-size: 14px;
       }
       .field__item {
         float: left;
@@ -55,23 +56,26 @@
 
 .field {
   &--name-field-wallpaper-rating {
+    position: absolute;
+    right: 20px;
+    top: 60px;
     .field__label {
-      @include s('rating');
-      width: 24px;
-      height: 24px;
-      color: transparent;
+      display: none;
     }
   }
   &--name-field-download-count {
-    margin-left: 110px;
+    position: absolute;
+    top: 87px;
+    left: 45px;
+    font-size: 13px;
+    color: lighten($text-default, 10%);
+    text-shadow: $bg-content 1px 1px 1px;
     .field__label {
-      @include s('download');
-      width: 24px;
-      height: 24px;
-      color: transparent;
+      margin-right: 3px;
     }
   }
   &--name-field-tag-categories {
+    margin-left: $horz-spacing-unit;
     .field__label {
       @include s('category');
       width: 24px;

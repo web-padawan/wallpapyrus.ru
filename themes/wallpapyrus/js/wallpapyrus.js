@@ -1,7 +1,10 @@
 (function($){
   $(function() {
-    var $date = $('.submitted');
-    $date.attr('title', 'Добавлено: ' + $date.text());
+    var $date = $('.node__submitted .submitted'),
+        text = $date.text();
+
+    $date.attr('title', text);
+    $date.text('Загружено: ' + text);
 
     var $download = $('.field--name-field-download-count');
     $download.attr('title', $download.text());

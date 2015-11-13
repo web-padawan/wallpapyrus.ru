@@ -8,17 +8,19 @@
   }
 
   &--full {
-    padding-top: $vert-spacing-unit;
     clear: both;
     .wallp__image {
-      width: 50%;
-      float: left;
+      margin: $vert-spacing-unit / 2 auto;
+      max-width: 95%;
+      padding: 7px;
+      border: solid 1px $block-border;
+      text-align: center;
     }
   }
 
   &-colors {
-    float: left;
-    margin-right: 8px;
+    float: right;
+    margin-right: $horz-spacing-unit;
 
     &__label {
       float: left;

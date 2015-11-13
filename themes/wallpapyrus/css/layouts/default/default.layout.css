@@ -8,7 +8,7 @@
   font-weight: bold;
 }
 .topline__container, .header__container, .nav__container, .main__container, .footer__container {
-  max-width: 1140px;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
 }
