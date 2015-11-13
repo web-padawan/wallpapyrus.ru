@@ -12,12 +12,8 @@ use League\ColorExtractor\Client as ColorExtractor;
 function wallpapyrus_color_extract_node_presave($node) {
 
   // get image field from node
-  if ($node->type == 'wallpaper_desktop') {
-    $fid = $node->field_image_desktop[LANGUAGE_NONE][0]['fid'];
-  }
-  elseif ($node->type == 'wallpaper_mobile') {
-    $fid = $node->field_image_mobile[LANGUAGE_NONE][0]['fid'];
-  }
+  if ($node->type !== 'wallpaper') return;
+  $fid = $node->field_image_wallpaper[LANGUAGE_NONE][0]['fid'];
 
   // load image file
   $image_file = file_load($fid);
