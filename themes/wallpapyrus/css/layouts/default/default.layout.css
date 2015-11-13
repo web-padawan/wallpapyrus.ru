@@ -46,15 +46,18 @@
 }
 
 .content {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 68.75%;
-  float: left;
-  padding-left: 0.625%;
-  padding-right: 0.625%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
+}
+@media (min-width: 960px) {
+  .content {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 68.75%;
+    float: left;
+    padding-left: 0.625%;
+    padding-right: 0.625%;
+  }
 }
 .content__row {
   padding-left: 1.5%;
@@ -65,12 +68,16 @@
 }
 
 .sidebar {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 31.25%;
-  float: right;
-  padding-left: 0.625%;
-  padding-right: 0.625%;
   padding: 10px;
+}
+@media (min-width: 960px) {
+  .sidebar {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 31.25%;
+    float: right;
+    padding-left: 0.625%;
+    padding-right: 0.625%;
+  }
 }

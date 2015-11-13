@@ -48,9 +48,11 @@
 }
 
 .content {
-  @include span(11 of 16);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
+
+  @include breakpoint ($md) {
+    @include span(11 of 16);
+  }
 
   &__row {
     padding-left: 1.5%;
@@ -63,8 +65,11 @@
 }
 
 .sidebar {
-  @include span(last 5 of 16);
   padding: 10px;
+
+  @include breakpoint ($md) {
+    @include span(last 5 of 16);
+  }
 }
 
 .footer {

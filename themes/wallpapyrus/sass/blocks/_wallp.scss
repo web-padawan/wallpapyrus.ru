@@ -11,7 +11,10 @@
     clear: both;
     .wallp__image {
       margin: $vert-spacing-unit / 2 auto;
-      max-width: 95%;
+      max-width: 70%;
+      @include breakpoint ($md) {
+        max-width: 95%;
+      }
       padding: 7px;
       border: solid 1px $block-border;
       text-align: center;
@@ -48,21 +51,46 @@
   }
 
   &-download {
-    width: 50%;
-    float: left;
     padding: 0 20px;
     overflow: hidden;
     font-size: 14px;
+
+    .form-select {
+      font-size: 13px;
+    }
+
+    &__row {
+      overflow: hidden;
+    }
+
+    &__form {
+      &--desktop {
+        float: left;
+      }
+      &--mobile {
+        float: right;
+      }
+    }
+
+    &__label {
+      display: inline-block;
+      margin-right: 3px;
+      width: 24px;
+      height: 24px;
+
+      &--desktop {
+        @include s('desktop');
+      }
+      &--mobile {
+        @include s('mobile');
+      }
+    }
 
     &__orig {
       &-title {
         float: left;
         margin-right: 8px;
       }
-    }
-
-    &__type {
-      margin-bottom: $vert-spacing-unit / 3;
     }
 
     &__user {
