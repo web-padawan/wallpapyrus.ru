@@ -27,11 +27,8 @@ function wallpapyrus_crop_preprocess_node(&$variables) {
 function wallpapyrus_crop_ajax_callback($nid, $w, $h) {
   $node = node_load($nid);
 
-  if (isset($node) && $node->type == 'wallpaper_desktop') {
-    $img = $node->field_image_desktop[LANGUAGE_NONE][0];
-  }
-  elseif (isset($node) && $node->type == 'wallpaper_mobile') {
-    $img = $node->field_image_mobile[LANGUAGE_NONE][0];
+  if (isset($node) && $node->type === 'wallpaper') {
+    $img = $node->field_image_wallpaper[LANGUAGE_NONE][0];
   }
 
   $image = image_load($img['uri']);
