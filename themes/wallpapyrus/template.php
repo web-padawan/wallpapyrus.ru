@@ -13,7 +13,7 @@ function wallpapyrus_omega_layout_alter(&$layout) {
   if (arg(0) == 'node' && is_numeric(arg(1))) {
     $nid = arg(1);
     $node = node_load($nid);
-    if (isset($node) && $node->type == 'wallpaper_desktop' || $node->type == 'wallpaper_mobile') {
+    if (isset($node) && $node->type == 'wallpaper') {
       drupal_add_js(drupal_get_path('theme', 'wallpapyrus') . '/js/wallpapyrus.js');
     }
   }
