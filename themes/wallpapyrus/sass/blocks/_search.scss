@@ -64,10 +64,4 @@
   &__item {
     @extend %wallp-item;
   }
-
-  .node--wallpaper-desktop--teaser,
-  .node--wallpaper-mobile--teaser {
-    @extend %wallp-node;
-  }
-
 }

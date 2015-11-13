@@ -16,6 +16,14 @@ video {
   height: auto;
 }
 
+.ajax-loader {
+  display: inline-block;
+  margin: 0 5px;
+  width: 25px;
+  height: 25px;
+  background: url('../images/loader.gif?1447410541');
+}
+
 @font-face {
   font-family: "Lato";
   src: url('../fonts/lato-regular.woff?1447308188') format('woff');
@@ -519,25 +527,13 @@ html {
   }
 }
 
-.search-results .node--wallpaper-desktop--teaser,
-.search-results .node--wallpaper-mobile--teaser, .view-taxonomy-term .node--wallpaper-desktop--teaser,
-.view-taxonomy-term .node--wallpaper-mobile--teaser,
-.view-front-page-content .node--wallpaper-desktop--teaser,
-.view-front-page-content .node--wallpaper-mobile--teaser {
+.node--teaser {
   position: relative;
 }
-.search-results .node--wallpaper-desktop--teaser h2,
-.search-results .node--wallpaper-mobile--teaser h2, .view-taxonomy-term .node--wallpaper-desktop--teaser h2,
-.view-taxonomy-term .node--wallpaper-mobile--teaser h2,
-.view-front-page-content .node--wallpaper-desktop--teaser h2,
-.view-front-page-content .node--wallpaper-mobile--teaser h2 {
+.node--teaser h2 {
   display: none;
 }
-.search-results .node--wallpaper-desktop--teaser .node__links,
-.search-results .node--wallpaper-mobile--teaser .node__links, .view-taxonomy-term .node--wallpaper-desktop--teaser .node__links,
-.view-taxonomy-term .node--wallpaper-mobile--teaser .node__links,
-.view-front-page-content .node--wallpaper-desktop--teaser .node__links,
-.view-front-page-content .node--wallpaper-mobile--teaser .node__links {
+.node--teaser .node__links {
   display: none;
 }
 
@@ -825,7 +821,7 @@ h6 {
   position: absolute;
   top: 16px;
   font-size: 14px;
-  background: url('../images/generated/icons-sa67b6b110c.png') 0 0 no-repeat;
+  background: url('../images/generated/icons-sb40e45c366.png') 0 0 no-repeat;
   width: 24px;
   height: 24px;
   text-indent: 28px;
@@ -858,7 +854,7 @@ h6 {
 }
 
 .field--name-field-wallpaper-rating .field__label {
-  background: url('../images/generated/icons-sa67b6b110c.png') 0 -204px no-repeat;
+  background: url('../images/generated/icons-sb40e45c366.png') 0 -136px no-repeat;
   width: 24px;
   height: 24px;
   width: 24px;
@@ -869,7 +865,7 @@ h6 {
   margin-left: 110px;
 }
 .field--name-field-download-count .field__label {
-  background: url('../images/generated/icons-sa67b6b110c.png') 0 -102px no-repeat;
+  background: url('../images/generated/icons-sb40e45c366.png') 0 -68px no-repeat;
   width: 24px;
   height: 24px;
   width: 24px;
@@ -877,7 +873,7 @@ h6 {
   color: transparent;
 }
 .field--name-field-tag-categories .field__label {
-  background: url('../images/generated/icons-sa67b6b110c.png') 0 -34px no-repeat;
+  background: url('../images/generated/icons-sb40e45c366.png') 0 -34px no-repeat;
   width: 24px;
   height: 24px;
   width: 24px;
@@ -885,7 +881,7 @@ h6 {
   color: transparent;
 }
 .field--name-field-tags .field__label {
-  background: url('../images/generated/icons-sa67b6b110c.png') 0 -276px no-repeat;
+  background: url('../images/generated/icons-sb40e45c366.png') 0 -208px no-repeat;
   width: 24px;
   height: 24px;
   width: 24px;
@@ -951,7 +947,7 @@ h6 {
   background: #3f3f3f;
 }
 .header .search-form .form-submit {
-  background: url('../images/generated/icons-sa67b6b110c.png') 0 -238px no-repeat;
+  background: url('../images/generated/icons-sb40e45c366.png') 0 -170px no-repeat;
   width: 28px;
   height: 28px;
   padding: 0;
@@ -1023,28 +1019,6 @@ h6 {
   width: 50%;
   float: left;
 }
-.wallp--mobile.wallp--full .wallp__image {
-  width: 28%;
-  margin-right: 10px;
-}
-.wallp__icon-wrapper {
-  position: absolute;
-  background: rgba(14, 14, 14, 0.6);
-}
-.wallp__icon {
-  height: 24px;
-  width: 24px;
-}
-.wallp__icon--desktop {
-  background: url('../images/generated/icons-sa67b6b110c.png') 0 -68px no-repeat;
-  width: 24px;
-  height: 24px;
-}
-.wallp__icon--mobile {
-  background: url('../images/generated/icons-sa67b6b110c.png') 0 -136px no-repeat;
-  width: 24px;
-  height: 24px;
-}
 .wallp-colors {
   float: left;
   margin-right: 8px;
@@ -1052,7 +1026,7 @@ h6 {
 .wallp-colors__label {
   float: left;
   margin-right: 4px;
-  background: url('../images/generated/icons-sa67b6b110c.png') 0 -170px no-repeat;
+  background: url('../images/generated/icons-sb40e45c366.png') 0 -102px no-repeat;
   width: 24px;
   height: 24px;
   width: 24px;

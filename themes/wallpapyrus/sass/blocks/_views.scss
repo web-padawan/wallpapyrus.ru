@@ -7,8 +7,4 @@
   .views-row {
     @extend %wallp-item;
   }
-  .node--wallpaper-desktop--teaser,
-  .node--wallpaper-mobile--teaser {
-    @extend %wallp-node;
-  }
 }

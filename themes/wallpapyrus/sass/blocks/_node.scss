@@ -41,6 +41,8 @@
   }
 
   &--teaser {
+    @extend %wallp-node;
+
     .node__submitted {
       @extend %wallp-date;
       width: 100%;

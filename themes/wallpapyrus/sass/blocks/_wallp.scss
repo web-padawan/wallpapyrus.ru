@@ -16,32 +16,6 @@
     }
   }
 
-  &--mobile {
-    &.wallp--full {
-      .wallp__image {
-        width: 28%;
-        margin-right: 10px;
-      }
-    }
-  }
-
-  &__icon-wrapper {
-    position: absolute;
-    background: rgba($bg-content, 0.6);
-  }
-
-  &__icon {
-    height: 24px;
-    width: 24px;
-
-    &--desktop {
-      @include s('desktop');
-    }
-    &--mobile {
-      @include s('mobile');
-    }
-  }
-
   &-colors {
     float: left;
     margin-right: 8px;
