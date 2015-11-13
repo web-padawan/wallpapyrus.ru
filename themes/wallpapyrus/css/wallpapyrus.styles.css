@@ -876,6 +876,12 @@ h6 {
   height: 24px;
   color: transparent;
 }
+.field--name-field-tags .field__item:after {
+  content: ", ";
+}
+.field--name-field-tags .field__item:last-child:after {
+  content: "";
+}
 
 .user-register-form,
 .user-login {

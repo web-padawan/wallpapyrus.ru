@@ -12,8 +12,12 @@
     var $category = $('.field--name-field-tag-categories');
     $category.attr('title', $category.text());
 
-    var $tags = $('.field--name-field-tags');
-    $tags.attr('title', $tags.text());
+    var $tags = $('.field--name-field-tags'),
+        terms = Array.prototype.slice.call($tags.find('.field__item')).map(function(elem) {
+          return elem.innerText;
+        });
+
+    $tags.attr('title', 'Теги: '+ terms.join(', '));
 
     var $colors = $('.wallp-colors__label');
     $colors.attr('title', 'Основные цвета');
