@@ -1,6 +1,8 @@
 <?php
 
 require 'vendor/autoload.php';
+require 'lib/Color.php';
+require 'lib/Palette.php';
 
 use League\ColorExtractor\Client as ColorExtractor;
 
@@ -9,6 +11,7 @@ use League\ColorExtractor\Client as ColorExtractor;
  */
 function wallpapyrus_color_extract_node_presave($node) {
 
+  // get image field from node
   if ($node->type == 'wallpaper_desktop') {
     $fid = $node->field_image_desktop[LANGUAGE_NONE][0]['fid'];
   }
@@ -16,37 +19,51 @@ function wallpapyrus_color_extract_node_presave($node) {
     $fid = $node->field_image_mobile[LANGUAGE_NONE][0]['fid'];
   }
 
+  // load image file
   $image_file = file_load($fid);
   $url = file_create_url($image_file->uri);
 
   if (!empty($url)) {
+
+    // extract color data
     $client = new ColorExtractor;
     $image = $client->loadJpeg($url);
+    $data = $image->extract(5);
 
-    $palette = $image->extract(5);
+    // get safe colors palette
+    $color = new Color;
+    $palette = new Palette;
+    $safe = $palette->getSafe();
 
     $i = 0;
-    foreach ($palette as $n => $color) {
+    foreach ($data as $row) {
 
-      $term = taxonomy_get_term_by_name($color);
+      // find closest safe color
+      $source = $color->fromHex($row);
+      $match = $source->getClosestMatch($safe);
+      $result = ("#" . substr("000000" . dechex($safe[$match]), -6));
+
+      // check if term already exists
+      $term = taxonomy_get_term_by_name($result);
       $vobj = taxonomy_vocabulary_machine_name_load('colors');
-      $vid = $vobj->vid;
 
+      // create new term if necessary
       if ($term == array()) {
         $taxonomy = new stdClass();
-        $taxonomy->name = $color;
-        $taxonomy->vid = $vid;
+        $taxonomy->name = $result;
+        $taxonomy->vid = $vobj->vid;
 
         taxonomy_term_save($taxonomy);
-        $term = taxonomy_get_term_by_name($color);
+        $term = taxonomy_get_term_by_name($result);
       }
 
       $tid = key($term);
 
+      // fill node color field
       $node->field_tag_colors[LANGUAGE_NONE][$i] = array(
         'tid' => $tid,
-        'vid' => $vid,
-        'name' => $color
+        'vid' => $vobj->vid,
+        'name' => $result
       );
 
       $i++;
