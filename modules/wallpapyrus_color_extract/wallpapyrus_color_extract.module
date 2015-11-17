@@ -56,7 +56,7 @@ function wallpapyrus_color_extract_node_presave($node) {
       $tid = key($term);
 
       // fill node color field
-      $node->field_tag_colors[LANGUAGE_NONE][$i] = array(
+      $node->field_term_colors[LANGUAGE_NONE][$i] = array(
         'tid' => $tid,
         'vid' => $vobj->vid,
         'name' => $result
