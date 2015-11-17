@@ -877,10 +877,10 @@ h6 {
 .field--name-field-download-count .field__label {
   margin-right: 3px;
 }
-.field--name-field-tag-categories {
+.field--name-field-term-category {
   margin-left: 1rem;
 }
-.field--name-field-tag-categories .field__label {
+.field--name-field-term-category .field__label {
   background: url('../images/generated/icons-s0d9b819cff.png') 0 0 no-repeat;
   width: 24px;
   height: 24px;
