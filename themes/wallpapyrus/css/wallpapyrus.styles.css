@@ -847,18 +847,15 @@ h6 {
   text-align: center;
 }
 
-.field--name-field-wallpaper-rating {
+.field--name-field-rating {
   position: absolute;
   top: 60px;
   right: 15%;
 }
 @media (min-width: 960px) {
-  .field--name-field-wallpaper-rating {
+  .field--name-field-rating {
     right: 20px;
   }
-}
-.field--name-field-wallpaper-rating .field__label {
-  display: none;
 }
 .field--name-field-download-count {
   position: absolute;

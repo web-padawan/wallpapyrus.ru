@@ -57,16 +57,13 @@
 
 
 .field {
-  &--name-field-wallpaper-rating {
+  &--name-field-rating {
     position: absolute;
     top: 60px;
     right: 15%;
 
     @include breakpoint ($md) {
       right: 20px;
-    }
-    .field__label {
-      display: none;
     }
   }
 
