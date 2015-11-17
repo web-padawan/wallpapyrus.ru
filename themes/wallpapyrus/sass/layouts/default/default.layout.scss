@@ -24,11 +24,15 @@
     padding-left: 10px;
     a {
       display: block;
+      font-family: $alegreya;
+      text-transform: uppercase;
+      color: $text-lightest;
+      font-weight: bold;
       &:hover,
       &:active,
       &:focus {
         text-decoration: none;
-        color: darken($link-default, 10%);
+        color: $text-lightest;
       }
     }
   }

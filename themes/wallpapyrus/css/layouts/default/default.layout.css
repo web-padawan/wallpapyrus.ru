@@ -7,6 +7,11 @@
   src: url('../../../fonts/lato-bold.woff?1447308188') format('woff');
   font-weight: bold;
 }
+@font-face {
+  font-family: "Alegreya";
+  src: url('../../../fonts/alegreya-bold.woff?1447744438') format('woff');
+  font-weight: bold;
+}
 .topline__container, .header__container, .nav__container, .main__container, .footer__container {
   max-width: 1024px;
   margin-left: auto;
@@ -35,10 +40,14 @@
 }
 .header__title a {
   display: block;
+  font-family: "Alegreya", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #d7d7d7;
+  font-weight: bold;
 }
 .header__title a:hover, .header__title a:active, .header__title a:focus {
   text-decoration: none;
-  color: #a67c39;
+  color: #d7d7d7;
 }
 
 .main__container {

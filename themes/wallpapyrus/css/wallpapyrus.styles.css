@@ -33,6 +33,11 @@ video {
   src: url('../fonts/lato-bold.woff?1447308188') format('woff');
   font-weight: bold;
 }
+@font-face {
+  font-family: "Alegreya";
+  src: url('../fonts/alegreya-bold.woff?1447744438') format('woff');
+  font-weight: bold;
+}
 @media (max-width: 1024px) {
   body.admin-menu.adminimal-menu:before {
     height: 0 !important;
@@ -799,7 +804,6 @@ h6 {
   padding-left: 10px;
 }
 .node--full .node__content {
-  margin-bottom: 24px;
   padding-top: 16px;
   overflow: hidden;
 }
