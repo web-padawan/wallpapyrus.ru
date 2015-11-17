@@ -28,7 +28,6 @@
       margin-right: $horz-spacing-unit;
       .field__label {
         float: left;
-        margin-right: $horz-spacing-unit / 2;
       }
       .field__items {
         float: left;
@@ -79,15 +78,13 @@
     font-size: 13px;
     color: lighten($text-default, 10%);
     text-shadow: $bg-content 1px 1px 1px;
-    .field__label {
-      margin-right: 3px;
-    }
   }
 
   &--name-field-term-category {
     margin-left: $horz-spacing-unit;
     .field__label {
       @include s('category');
+      margin-right: $horz-spacing-unit / 2;
       width: 24px;
       height: 24px;
       color: transparent;
@@ -97,6 +94,7 @@
   &--name-field-tags {
     .field__label {
       @include s('tags');
+      margin-right: $horz-spacing-unit / 2;
       width: 24px;
       height: 24px;
       color: transparent;

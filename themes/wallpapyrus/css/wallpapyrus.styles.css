@@ -829,7 +829,6 @@ h6 {
 }
 .node--full .field .field__label {
   float: left;
-  margin-right: 0.5rem;
 }
 .node--full .field .field__items {
   float: left;
@@ -871,9 +870,6 @@ h6 {
     left: 40px;
   }
 }
-.field--name-field-download-count .field__label {
-  margin-right: 3px;
-}
 .field--name-field-term-category {
   margin-left: 1rem;
 }
@@ -881,6 +877,7 @@ h6 {
   background: url('../images/generated/icons-s0d9b819cff.png') 0 0 no-repeat;
   width: 24px;
   height: 24px;
+  margin-right: 0.5rem;
   width: 24px;
   height: 24px;
   color: transparent;
@@ -889,6 +886,7 @@ h6 {
   background: url('../images/generated/icons-s0d9b819cff.png') 0 -242px no-repeat;
   width: 24px;
   height: 24px;
+  margin-right: 0.5rem;
   width: 24px;
   height: 24px;
   color: transparent;
