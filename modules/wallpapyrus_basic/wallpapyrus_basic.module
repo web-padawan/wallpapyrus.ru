@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Wallpapyrus: Basic feature.
+ */
+
+include_once 'wallpapyrus_basic.features.inc';
