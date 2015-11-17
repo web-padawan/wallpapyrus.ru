@@ -506,12 +506,12 @@ html {
 }
 
 .search-results, .view-taxonomy-term .view-content,
-.view-front-page-content .view-content {
+.view-new-wallpapers .view-content {
   overflow: hidden;
 }
 
 .search-results__item, .view-taxonomy-term .views-row,
-.view-front-page-content .views-row {
+.view-new-wallpapers .views-row {
   position: relative;
   margin-top: 15px;
   padding: 4px;
@@ -524,7 +524,7 @@ html {
 }
 @media (min-width: 960px) {
   .search-results__item, .view-taxonomy-term .views-row,
-  .view-front-page-content .views-row {
+  .view-new-wallpapers .views-row {
     width: 31.66667%;
     float: left;
     margin-left: 0.83333%;
@@ -1024,7 +1024,7 @@ h6 {
 }
 
 .view-taxonomy-term,
-.view-front-page-content {
+.view-new-wallpapers {
   padding-left: 5px;
 }
 
