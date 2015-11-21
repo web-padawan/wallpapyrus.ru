@@ -3,6 +3,7 @@
   <?php
     $node = $element['#object'];
     $view = $element['#view_mode'];
+    $url = $item['#item']['uri'];
   ?>
 
   <?php if ($view === 'teaser'): ?>
@@ -16,8 +17,13 @@
     <?php endif; ?>
 
     <div class="wallp__image">
+
+      <?php if ($view === 'full'): ?>
+        <a id="wallp" href="<?php print image_style_url('preview_1366x768', $url); ?>" class="mfp-image">
+      <?php endif; ?>
+
       <?php
-        $url = $item['#item']['uri'];
+
         $imgprops = image_get_info($url);
         $image = array(
           'style_name' => ($view === 'teaser') ? 'preview_480x300' : 'preview_650x405',
@@ -25,6 +31,10 @@
         );
         print theme('image_style', $image);
       ?>
+
+      <?php if ($view === 'full'): ?>
+        </a>" >
+      <?php endif; ?>
     </div>
 
     <?php if ($view === 'teaser'): ?>
