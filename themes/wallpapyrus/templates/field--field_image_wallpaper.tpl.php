@@ -33,7 +33,7 @@
       ?>
 
       <?php if ($view === 'full'): ?>
-        </a>" >
+        </a>
       <?php endif; ?>
     </div>
 
