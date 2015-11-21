@@ -7,6 +7,14 @@
     margin-bottom: 24px;
   }
 
+  &__popup {
+    outline:none;
+    &:active,
+    &:focus {
+      outline:none;
+    }
+  }
+
   &--full {
     clear: both;
     .wallp__image {

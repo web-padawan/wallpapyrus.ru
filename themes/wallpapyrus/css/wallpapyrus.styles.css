@@ -980,6 +980,12 @@ h6 {
   font-size: 14px;
   margin-bottom: 24px;
 }
+.wallp__popup {
+  outline: none;
+}
+.wallp__popup:active, .wallp__popup:focus {
+  outline: none;
+}
 .wallp--full {
   clear: both;
 }
