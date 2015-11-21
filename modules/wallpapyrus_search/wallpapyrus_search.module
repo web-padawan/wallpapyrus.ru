@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Wallpapyrus: Search feature.
+ */
+
+include_once 'wallpapyrus_search.features.inc';

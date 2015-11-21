@@ -1,0 +1,16 @@
+name = Wallpapyrus: Search
+description = Полнотекстовый поиск с морфологией
+core = 7.x
+package = Wallpapyrus
+dependencies[] = entity
+dependencies[] = search_api
+dependencies[] = search_api_db
+dependencies[] = search_api_views
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[search_api_index][] = node_index
+features[search_api_server][] = database
+features[views_view][] = search
+features_exclude[dependencies][ctools] = ctools
+project path = sites/wallpapyrus.ru/modules
