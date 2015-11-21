@@ -25,6 +25,9 @@
     var $rating = $('.field--name-field-wallpaper-rating');
     $rating.attr('title', 'Рейтинг');
 
-    $('#wallp').magnificPopup({type:'image'});
+    $('#wallp').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true
+    });
   });
 })(jQuery);
