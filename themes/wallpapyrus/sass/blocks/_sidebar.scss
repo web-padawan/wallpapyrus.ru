@@ -1,22 +1,22 @@
-.block--views-categories-block,
-.block--views-colors-block,
-.block--tagclouds {
-  margin-bottom: $vert-spacing-unit;
-  border: 1px solid $block-border;
+.l-region--sidebar {
+  .block {
+    margin-bottom: $vert-spacing-unit;
+    border: 1px solid $block-border;
 
-  @include breakpoint($sm $md) {
-    @include span(4 of 12 split);
-  }
+    @include breakpoint($sm $md) {
+      @include span(4 of 12 split);
+    }
 
-  .block__title {
-    @extend %block-title;
-    border-bottom: 1px solid $block-border;
-  }
+    &__title {
+      @extend %block-title;
+      border-bottom: 1px solid $block-border;
+    }
 
-  .block__content {
-    background: $block-content;
-    overflow: hidden;
-    padding: 10px;
+    &__content {
+      background: $block-content;
+      overflow: hidden;
+      padding: 10px;
+    }
   }
 }
 

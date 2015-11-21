@@ -459,9 +459,7 @@ html {
   line-height: 1.5em;
 }
 
-.block--views-categories-block .block__title,
-.block--views-colors-block .block__title,
-.block--tagclouds .block__title {
+.l-region--sidebar .block__title {
   padding: 10px 15px;
   font-size: 16px;
   line-height: 16px;
@@ -926,30 +924,22 @@ h6 {
   margin: 0 0 0 10px;
 }
 
-.block--views-categories-block,
-.block--views-colors-block,
-.block--tagclouds {
+.l-region--sidebar .block {
   margin-bottom: 24px;
   border: 1px solid #464545;
 }
 @media (min-width: 768px) and (max-width: 960px) {
-  .block--views-categories-block,
-  .block--views-colors-block,
-  .block--tagclouds {
+  .l-region--sidebar .block {
     width: 31.66667%;
     float: left;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
   }
 }
-.block--views-categories-block .block__title,
-.block--views-colors-block .block__title,
-.block--tagclouds .block__title {
+.l-region--sidebar .block__title {
   border-bottom: 1px solid #464545;
 }
-.block--views-categories-block .block__content,
-.block--views-colors-block .block__content,
-.block--tagclouds .block__content {
+.l-region--sidebar .block__content {
   background: transparent;
   overflow: hidden;
   padding: 10px;
