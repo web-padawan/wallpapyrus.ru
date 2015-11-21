@@ -13,10 +13,10 @@
       top: 60px;
       left: 17%;
       padding: 3px 6px;
-      font-size: 13px;
+      font-size: 16px;
       border-bottom-right-radius: 5px;
-      color: $text-lighten;
-      text-shadow: $text-shadow 1px 1px 1px;
+      color: $text-white;
+      text-shadow: 1px 1px 1px $text-shadow;
       @include breakpoint ($md) {
         left: 40px;
       }
@@ -75,9 +75,13 @@
       left: 40px;
     }
     margin-left: 5px;
-    font-size: 13px;
-    color: lighten($text-default, 10%);
-    text-shadow: $bg-content 1px 1px 1px;
+    font-size: 15px;
+    color: $text-white;
+    text-shadow: 1px 1px 1px $text-shadow;
+
+    .field__label {
+      font-weight: normal;
+    }
   }
 
   &--name-field-term-category {

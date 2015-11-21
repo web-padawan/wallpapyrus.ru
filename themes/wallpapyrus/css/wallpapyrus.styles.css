@@ -815,10 +815,10 @@ h6 {
   top: 60px;
   left: 17%;
   padding: 3px 6px;
-  font-size: 13px;
+  font-size: 16px;
   border-bottom-right-radius: 5px;
-  color: #b6b6b6;
-  text-shadow: #0c0401 1px 1px 1px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
 }
 @media (min-width: 960px) {
   .node--full .node__submitted {
@@ -864,14 +864,17 @@ h6 {
   top: 87px;
   left: 17%;
   margin-left: 5px;
-  font-size: 13px;
-  color: #b6b6b6;
-  text-shadow: #0e0e0e 1px 1px 1px;
+  font-size: 15px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
 }
 @media (min-width: 960px) {
   .field--name-field-download-count {
     left: 40px;
   }
+}
+.field--name-field-download-count .field__label {
+  font-weight: normal;
 }
 .field--name-field-term-category {
   margin-left: 1rem;
