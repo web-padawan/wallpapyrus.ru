@@ -19,7 +19,7 @@
     <div class="wallp__image">
 
       <?php if ($view === 'full'): ?>
-        <a id="wallp" href="<?php print image_style_url('preview_1366x768', $url); ?>" class="mfp-image">
+        <a id="wallp" href="<?php print file_create_url($url) ?>" class="mfp-image">
       <?php endif; ?>
 
       <?php

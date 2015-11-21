@@ -14,6 +14,8 @@ function wallpapyrus_omega_layout_alter(&$layout) {
     $nid = arg(1);
     $node = node_load($nid);
     if (isset($node) && $node->type == 'wallpaper') {
+      drupal_add_css(drupal_get_path('theme', 'wallpapyrus') . '/css/magnific-popup.css');
+      drupal_add_js(drupal_get_path('theme', 'wallpapyrus') . '/js/lib/magnific-popup.min.js');
       drupal_add_js(drupal_get_path('theme', 'wallpapyrus') . '/js/wallpapyrus.js');
     }
   }
