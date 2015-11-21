@@ -70,6 +70,10 @@
     &__row {
       margin: $vert-spacing-unit / 2 0 $vert-spacing-unit 0;
       overflow: hidden;
+      @include breakpoint(max-width $xs_min) {
+        text-align: center;
+        margin: 0;
+      }
     }
 
     &__form {
@@ -78,6 +82,11 @@
       }
       &--mobile {
         float: right;
+      }
+      @include breakpoint(max-width $xs_min) {
+        width: 100%;
+        clear: both;
+        margin: $vert-spacing-unit / 2 0;
       }
     }
 
@@ -98,6 +107,11 @@
 
     &__orig {
       float: left;
+      @include breakpoint(max-width $xs_min) {
+        margin-bottom: $vert-spacing-unit / 2;
+        display: inline-block;
+        float: none;
+      }
 
       &-icon {
         display: inline-block;
@@ -115,6 +129,11 @@
     &__user {
       float: left;
       margin-left: $horz-spacing-unit;
+      @include breakpoint(max-width $xs_min) {
+        margin-bottom: $vert-spacing-unit / 2;
+        display: inline-block;
+        float: none;
+      }
 
       &-icon {
         display: inline-block;
@@ -143,6 +162,11 @@
 
     &__manual {
       float: right;
+      @include breakpoint(max-width $xs_min) {
+        width: 100%;
+        clear: both;
+        margin-bottom: $vert-spacing-unit;
+      }
 
       &-link {
         display: inline-block;

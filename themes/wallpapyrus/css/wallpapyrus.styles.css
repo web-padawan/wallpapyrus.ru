@@ -705,6 +705,11 @@ h6 {
   line-height: 1.5rem;
 }
 
+@media (max-width: 639px) {
+  .comments {
+    text-align: center;
+  }
+}
 .comments__title {
   font-size: 16px;
   font-size: 1rem;
@@ -770,6 +775,11 @@ h6 {
 }
 .comment-form .form-textarea {
   max-width: 380px;
+}
+@media (max-width: 639px) {
+  .comment-form .form-textarea {
+    margin: 0 auto;
+  }
 }
 
 .comment-confirm-delete {
@@ -1032,11 +1042,24 @@ h6 {
   margin: 12px 0 24px 0;
   overflow: hidden;
 }
+@media (max-width: 639px) {
+  .wallp-download__row {
+    text-align: center;
+    margin: 0;
+  }
+}
 .wallp-download__form--desktop {
   float: left;
 }
 .wallp-download__form--mobile {
   float: right;
+}
+@media (max-width: 639px) {
+  .wallp-download__form {
+    width: 100%;
+    clear: both;
+    margin: 12px 0;
+  }
 }
 .wallp-download__icon {
   display: inline-block;
@@ -1058,6 +1081,13 @@ h6 {
 .wallp-download__orig {
   float: left;
 }
+@media (max-width: 639px) {
+  .wallp-download__orig {
+    margin-bottom: 12px;
+    display: inline-block;
+    float: none;
+  }
+}
 .wallp-download__orig-icon {
   display: inline-block;
   vertical-align: middle;
@@ -1074,6 +1104,13 @@ h6 {
 .wallp-download__user {
   float: left;
   margin-left: 1rem;
+}
+@media (max-width: 639px) {
+  .wallp-download__user {
+    margin-bottom: 12px;
+    display: inline-block;
+    float: none;
+  }
 }
 .wallp-download__user-icon {
   display: inline-block;
@@ -1097,6 +1134,13 @@ h6 {
 }
 .wallp-download__manual {
   float: right;
+}
+@media (max-width: 639px) {
+  .wallp-download__manual {
+    width: 100%;
+    clear: both;
+    margin-bottom: 24px;
+  }
 }
 .wallp-download__manual-link {
   display: inline-block;

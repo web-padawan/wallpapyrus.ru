@@ -1,4 +1,7 @@
 .comments {
+  @include breakpoint(max-width $xs_min) {
+    text-align: center;
+  }
 
   &__title {
     @include adjust-font-size-to(16px);
@@ -78,6 +81,9 @@
 
   .form-textarea {
     max-width: 380px;
+    @include breakpoint(max-width $xs_min) {
+      margin: 0 auto;
+    }
   }
 }
 
