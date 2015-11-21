@@ -3,7 +3,7 @@
     margin-bottom: $vert-spacing-unit;
     border: 1px solid $block-border;
 
-    @include breakpoint($sm $md) {
+    @include breakpoint($sm_min $sm_max) {
       @include span(4 of 12 split);
     }
 

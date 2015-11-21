@@ -10,7 +10,7 @@
   border: 1px solid $teaser-border;
   border-top-color: $teaser-top;
   @include span(6 of 12 split);
-  @include breakpoint($sm) {
+  @include breakpoint($md) {
     @include span(4 of 12 split);
   }
 }

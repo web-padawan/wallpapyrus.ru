@@ -522,7 +522,7 @@ html {
   margin-left: 0.83333%;
   margin-right: 0.83333%;
 }
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .view-search .views-row,
   .view-taxonomy-term .views-row,
   .view-new-wallpapers .views-row {
@@ -928,7 +928,7 @@ h6 {
   margin-bottom: 24px;
   border: 1px solid #464545;
 }
-@media (min-width: 768px) and (max-width: 960px) {
+@media (min-width: 768px) and (max-width: 959px) {
   .l-region--sidebar .block {
     width: 31.66667%;
     float: left;
