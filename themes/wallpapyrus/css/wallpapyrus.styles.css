@@ -505,12 +505,14 @@ html {
   text-decoration: underline;
 }
 
-.search-results, .view-taxonomy-term .view-content,
+.view-search .view-content,
+.view-taxonomy-term .view-content,
 .view-new-wallpapers .view-content {
   overflow: hidden;
 }
 
-.search-results__item, .view-taxonomy-term .views-row,
+.view-search .views-row,
+.view-taxonomy-term .views-row,
 .view-new-wallpapers .views-row {
   position: relative;
   margin-top: 15px;
@@ -523,7 +525,8 @@ html {
   margin-right: 0.83333%;
 }
 @media (min-width: 768px) {
-  .search-results__item, .view-taxonomy-term .views-row,
+  .view-search .views-row,
+  .view-taxonomy-term .views-row,
   .view-new-wallpapers .views-row {
     width: 31.66667%;
     float: left;
@@ -874,7 +877,7 @@ h6 {
   margin-left: 1rem;
 }
 .field--name-field-term-category .field__label {
-  background: url('../images/generated/icons-s0d9b819cff.png') 0 0 no-repeat;
+  background: url('../images/generated/icons-s2991f51c11.png') 0 0 no-repeat;
   width: 24px;
   height: 24px;
   margin-right: 0.5rem;
@@ -883,7 +886,7 @@ h6 {
   color: transparent;
 }
 .field--name-field-tags .field__label {
-  background: url('../images/generated/icons-s0d9b819cff.png') 0 -242px no-repeat;
+  background: url('../images/generated/icons-s2991f51c11.png') 0 -204px no-repeat;
   width: 24px;
   height: 24px;
   margin-right: 0.5rem;
@@ -905,84 +908,19 @@ h6 {
   padding-left: 10px;
 }
 
-.block--search {
+.block--views-exp-search-page {
   float: right;
   margin-top: 36px;
   margin-right: 4px;
 }
-
-.header .search-form {
-  width: 199px;
-  height: 35px;
-  background: #0e0e0e;
-  border-radius: 5px;
-  border: solid 1px #2f2f2f;
-}
-.header .search-form .form-type-textfield,
-.header .search-form .form-actions {
-  float: left;
-  margin: 0;
-}
-.header .search-form .form-text {
-  height: 32px;
-  width: 166px;
-  position: relative;
-  left: 2px;
-  top: 1px;
-  padding-left: 10px;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  color: #9c9c9c;
-  background: transparent;
-}
-.header .search-form .form-text:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 100px #0e0e0e inset;
-  -webkit-text-fill-color: #9c9c9c !important;
-}
-.header .search-form .form-text:-moz-placeholder {
-  color: #9c9c9c;
-  font-style: italic;
-}
-.header .search-form .form-text::-moz-placeholder {
-  color: #9c9c9c;
-  font-style: italic;
-}
-.header .search-form .form-text:-ms-input-placeholder {
-  color: #9c9c9c;
-  font-style: italic;
-}
-.header .search-form .form-text::-webkit-input-placeholder {
-  color: #9c9c9c;
-  font-style: italic;
-}
-.header .search-form .form-actions {
-  position: relative;
-  top: 2px;
-  left: 1px;
-  background: #252525;
-  border-radius: 3px;
-}
-.header .search-form .form-actions:hover {
-  background: #3f3f3f;
-}
-.header .search-form .form-submit {
-  background: url('../images/generated/icons-s0d9b819cff.png') 0 -204px no-repeat;
-  width: 28px;
-  height: 28px;
+.block--views-exp-search-page .views-exposed-widget {
   padding: 0;
-  border: none;
-  color: transparent;
-  outline: none;
 }
-
-.page-search .content > h2 {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 24px;
-  line-height: 1.5rem;
-  margin-top: 12px;
-  padding-left: 10px;
+.block--views-exp-search-page .views-exposed-widget .form-text {
+  width: 170px;
+}
+.block--views-exp-search-page .views-exposed-widget .form-submit {
+  margin: 0 0 0 10px;
 }
 
 .block--views-categories-block,
@@ -1028,6 +966,7 @@ h6 {
   float: left;
 }
 
+.view-search,
 .view-taxonomy-term,
 .view-new-wallpapers {
   padding-left: 5px;
@@ -1063,7 +1002,7 @@ h6 {
 .wallp-colors__label {
   float: left;
   margin-right: 4px;
-  background: url('../images/generated/icons-s0d9b819cff.png') 0 -136px no-repeat;
+  background: url('../images/generated/icons-s2991f51c11.png') 0 -136px no-repeat;
   width: 24px;
   height: 24px;
   width: 24px;
@@ -1108,12 +1047,12 @@ h6 {
   height: 24px;
 }
 .wallp-download__icon--desktop {
-  background: url('../images/generated/icons-s0d9b819cff.png') 0 -68px no-repeat;
+  background: url('../images/generated/icons-s2991f51c11.png') 0 -68px no-repeat;
   width: 24px;
   height: 24px;
 }
 .wallp-download__icon--mobile {
-  background: url('../images/generated/icons-s0d9b819cff.png') 0 -102px no-repeat;
+  background: url('../images/generated/icons-s2991f51c11.png') 0 -102px no-repeat;
   width: 24px;
   height: 24px;
 }
@@ -1125,7 +1064,7 @@ h6 {
   vertical-align: middle;
   width: 24px;
   height: 24px;
-  background: url('../images/generated/icons-s0d9b819cff.png') 0 -170px no-repeat;
+  background: url('../images/generated/icons-s2991f51c11.png') 0 -170px no-repeat;
   width: 24px;
   height: 24px;
 }
@@ -1142,7 +1081,7 @@ h6 {
   vertical-align: middle;
   width: 24px;
   height: 24px;
-  background: url('../images/generated/icons-s0d9b819cff.png') 0 -276px no-repeat;
+  background: url('../images/generated/icons-s2991f51c11.png') 0 -238px no-repeat;
   width: 24px;
   height: 24px;
 }
@@ -1169,7 +1108,7 @@ h6 {
   vertical-align: middle;
   width: 24px;
   height: 24px;
-  background: url('../images/generated/icons-s0d9b819cff.png') 0 -34px no-repeat;
+  background: url('../images/generated/icons-s2991f51c11.png') 0 -34px no-repeat;
   width: 24px;
   height: 24px;
 }
