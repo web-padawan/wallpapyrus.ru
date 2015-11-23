@@ -21,21 +21,21 @@ video {
   margin: 0 5px;
   width: 25px;
   height: 25px;
-  background: url('../images/loader.gif?1447410541');
+  background: url('../images/loader.gif?1447445965');
 }
 
 @font-face {
   font-family: "Lato";
-  src: url('../fonts/lato-regular.woff?1447308188') format('woff');
+  src: url('../fonts/lato-regular.woff?1447445965') format('woff');
 }
 @font-face {
   font-family: "Lato";
-  src: url('../fonts/lato-bold.woff?1447308188') format('woff');
+  src: url('../fonts/lato-bold.woff?1447445965') format('woff');
   font-weight: bold;
 }
 @font-face {
   font-family: "Alegreya";
-  src: url('../fonts/alegreya-bold.woff?1447744438') format('woff');
+  src: url('../fonts/alegreya-bold.woff?1447790038') format('woff');
   font-weight: bold;
 }
 @media (max-width: 1024px) {
@@ -553,7 +553,7 @@ html {
 }
 
 body {
-  background: fixed #0e0e0e url('../images/body.jpg?1358697891') center top repeat-x;
+  background: fixed #0e0e0e url('../images/body.jpg?1446404984') center top repeat-x;
   color: #9c9c9c;
   font-family: "Lato", Helvetica, Arial, sans-serif;
 }
@@ -955,18 +955,23 @@ h6 {
   padding: 10px;
 }
 
-.block--views-categories-block ul {
+.block--menu-menu-categories .menu {
   margin: 0;
-  padding-left: 10px;
+  overflow: hidden;
+}
+.block--menu-menu-categories > .menu {
+  margin: 0;
+  padding: 10px 10px 10px 15px;
   font-size: 13px;
   list-style-position: inside;
 }
-.block--views-categories-block .view-content {
-  overflow: hidden;
-}
-.block--views-categories-block .view-content > ul > li {
+.block--menu-menu-categories > .menu > li {
   width: 50%;
   float: left;
+}
+.block--menu-menu-categories .expanded {
+  list-style-image: none;
+  list-style-type: disc;
 }
 
 .view-search,

@@ -20,20 +20,23 @@
   }
 }
 
-.block--views-categories-block {
-  ul {
+.block--menu-menu-categories {
+  .menu {
     margin: 0;
-    padding-left: 10px;
+    overflow: hidden;
+  }
+  > .menu {
+    margin: 0;
+    padding: 10px 10px 10px 15px;
     font-size: 13px;
     list-style-position: inside;
-  }
-  .view-content {
-    overflow: hidden;
-    > ul {
-      > li {
-        width: 50%;
-        float: left;
-      }
+    > li {
+      width: 50%;
+      float: left;
     }
+  }
+  .expanded {
+    list-style-image: none;
+    list-style-type: disc;
   }
 }

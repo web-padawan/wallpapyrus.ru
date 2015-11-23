@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Lato";
-  src: url('../../../fonts/lato-regular.woff?1447308188') format('woff');
+  src: url('../../../fonts/lato-regular.woff?1447445965') format('woff');
 }
 @font-face {
   font-family: "Lato";
-  src: url('../../../fonts/lato-bold.woff?1447308188') format('woff');
+  src: url('../../../fonts/lato-bold.woff?1447445965') format('woff');
   font-weight: bold;
 }
 @font-face {
   font-family: "Alegreya";
-  src: url('../../../fonts/alegreya-bold.woff?1447744438') format('woff');
+  src: url('../../../fonts/alegreya-bold.woff?1447790038') format('woff');
   font-weight: bold;
 }
 .topline__container, .header__container, .nav__container, .main__container, .footer__container {
