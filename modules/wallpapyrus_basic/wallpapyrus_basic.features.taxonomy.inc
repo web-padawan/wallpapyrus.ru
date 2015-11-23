@@ -13,7 +13,7 @@ function wallpapyrus_basic_taxonomy_default_vocabularies() {
       'name' => 'Категории',
       'machine_name' => 'categories',
       'description' => '',
-      'hierarchy' => 0,
+      'hierarchy' => 1,
       'module' => 'taxonomy',
       'weight' => 0,
       'rdf_mapping' => array(
