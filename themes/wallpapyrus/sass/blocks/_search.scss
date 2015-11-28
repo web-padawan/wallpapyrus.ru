@@ -1,7 +1,10 @@
 .block--views-exp-search-page {
-  float: right;
-  margin-top: 36px;
-  margin-right: 4px;
+  width: 236px;
+  margin: 0 auto $vert-spacing-unit auto;
+  @include breakpoint($xs_min) {
+    margin: $vert-spacing-unit * 1.5 4px 0 0;
+    float: right;
+  }
   .views-exposed-widget {
     padding: 0;
     .form-text {

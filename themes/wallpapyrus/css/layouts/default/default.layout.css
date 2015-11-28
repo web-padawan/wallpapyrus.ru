@@ -35,8 +35,14 @@
 .header__title {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-  float: left;
-  padding-left: 10px;
+  text-align: center;
+}
+@media (min-width: 639px) {
+  .header__title {
+    float: left;
+    padding-left: 10px;
+    text-align: left;
+  }
 }
 .header__title a {
   display: block;

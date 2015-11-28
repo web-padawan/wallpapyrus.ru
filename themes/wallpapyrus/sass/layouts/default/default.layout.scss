@@ -20,8 +20,12 @@
   &__title {
     @include leader;
     @include trailer;
-    float: left;
-    padding-left: 10px;
+    text-align: center;
+    @include breakpoint($xs_min) {
+      float: left;
+      padding-left: 10px;
+      text-align: left;
+    }
     a {
       display: block;
       font-family: $alegreya;
