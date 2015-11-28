@@ -9,8 +9,10 @@
   padding: 4px;
   border: 1px solid $teaser-border;
   border-top-color: $teaser-top;
-  @include span(6 of 12 split);
-  @include breakpoint($md) {
+  @include breakpoint(480px) {
+    @include span(6 of 12 split);
+  }
+  @include breakpoint($xs_min) {
     @include span(4 of 12 split);
   }
 }

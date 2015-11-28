@@ -517,12 +517,18 @@ html {
   padding: 4px;
   border: 1px solid #2f2f2f;
   border-top-color: #c3964f;
-  width: 48.33333%;
-  float: left;
-  margin-left: 0.83333%;
-  margin-right: 0.83333%;
 }
-@media (min-width: 960px) {
+@media (min-width: 480px) {
+  .view-search .views-row,
+  .view-taxonomy-term .views-row,
+  .view-new-wallpapers .views-row {
+    width: 48.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+}
+@media (min-width: 639px) {
   .view-search .views-row,
   .view-taxonomy-term .views-row,
   .view-new-wallpapers .views-row {
