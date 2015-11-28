@@ -746,6 +746,7 @@ h6 {
 }
 .comment__submitted {
   margin: 0;
+  font-style: italic;
 }
 .comment__links {
   font-style: italic;
