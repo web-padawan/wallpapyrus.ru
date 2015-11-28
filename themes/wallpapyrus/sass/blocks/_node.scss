@@ -46,10 +46,11 @@
     @extend %wallp-node;
 
     .node__submitted {
-      @extend %wallp-date;
-      width: 100%;
-      bottom: 0;
-      text-align: center;
+      display: none;
+      // @extend %wallp-date;
+      // width: 100%;
+      // bottom: 0;
+      // text-align: center;
     }
   }
 }

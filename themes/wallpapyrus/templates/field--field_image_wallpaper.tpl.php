@@ -37,10 +37,10 @@
       <?php endif; ?>
     </div>
 
-    <?php if ($view === 'teaser'): ?>
-        <div class="wallp__title"><?php print $node->title ?></div>
+    <?php /* if ($view === 'teaser'): */?>
+        <!--<div class="wallp__title"><?php /* print $node->title */ ?></div>-->
       </a>
-    <?php endif; ?>
+    <?php /*endif; */ ?>
 
     <?php if ($view === 'full'): ?>
 

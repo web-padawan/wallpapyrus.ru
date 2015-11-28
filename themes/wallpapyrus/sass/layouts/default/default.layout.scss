@@ -77,8 +77,13 @@
 }
 
 .footer {
+  border-top: solid 1px $footer-border;
+  margin-top: $vert-spacing-unit;
+  padding: $vert-spacing-unit / 2 0;
+  font-size: 13px;
+  text-align: center;
+
   &__container {
     @extend %container;
   }
 }
-

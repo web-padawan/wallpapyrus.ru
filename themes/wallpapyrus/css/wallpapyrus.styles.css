@@ -543,15 +543,6 @@ html {
   display: none;
 }
 
-.node--teaser .node__submitted {
-  position: absolute;
-  font-size: 12px;
-  text-indent: 5px;
-}
-.node--teaser .node__submitted p {
-  margin: 0;
-}
-
 body {
   background: fixed #0e0e0e url('../images/body.jpg?1358697891') center top repeat-x;
   color: #9c9c9c;
@@ -852,9 +843,7 @@ h6 {
   margin-right: 0px;
 }
 .node--teaser .node__submitted {
-  width: 100%;
-  bottom: 0;
-  text-align: center;
+  display: none;
 }
 
 .field--name-field-rating {
@@ -982,12 +971,6 @@ h6 {
 
 .wallp {
   overflow: hidden;
-}
-.wallp__title {
-  text-align: center;
-  font-size: 14px;
-  margin: 0;
-  visibility: hidden;
 }
 .wallp__popup {
   outline: none;
