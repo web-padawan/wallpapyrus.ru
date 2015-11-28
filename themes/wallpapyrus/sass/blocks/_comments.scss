@@ -49,6 +49,9 @@
   &__links {
     font-style: italic;
     font-size: 14px;
+    .comment_forbidden {
+      display: none;
+    }
   }
 }
 

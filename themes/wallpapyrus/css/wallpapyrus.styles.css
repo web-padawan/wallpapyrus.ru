@@ -751,6 +751,9 @@ h6 {
   font-style: italic;
   font-size: 14px;
 }
+.comment__links .comment_forbidden {
+  display: none;
+}
 
 .page-comment .comment-form {
   padding-left: 10px;
@@ -829,6 +832,9 @@ h6 {
   .node--full .node__submitted {
     left: 40px;
   }
+}
+.node--full .node__links {
+  margin-bottom: 24px;
 }
 .node--full .field {
   float: left;
