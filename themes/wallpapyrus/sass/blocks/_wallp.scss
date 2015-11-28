@@ -4,7 +4,9 @@
   &__title {
     text-align: center;
     font-size: 14px;
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
+    margin: 0;
+    visibility: hidden;
   }
 
   &__popup {

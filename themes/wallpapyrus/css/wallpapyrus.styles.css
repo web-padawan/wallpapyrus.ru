@@ -21,21 +21,21 @@ video {
   margin: 0 5px;
   width: 25px;
   height: 25px;
-  background: url('../images/loader.gif?1447445965');
+  background: url('../images/loader.gif?1447410541');
 }
 
 @font-face {
   font-family: "Lato";
-  src: url('../fonts/lato-regular.woff?1447445965') format('woff');
+  src: url('../fonts/lato-regular.woff?1447308188') format('woff');
 }
 @font-face {
   font-family: "Lato";
-  src: url('../fonts/lato-bold.woff?1447445965') format('woff');
+  src: url('../fonts/lato-bold.woff?1447308188') format('woff');
   font-weight: bold;
 }
 @font-face {
   font-family: "Alegreya";
-  src: url('../fonts/alegreya-bold.woff?1447790038') format('woff');
+  src: url('../fonts/alegreya-bold.woff?1447744438') format('woff');
   font-weight: bold;
 }
 @media (max-width: 1024px) {
@@ -553,7 +553,7 @@ html {
 }
 
 body {
-  background: fixed #0e0e0e url('../images/body.jpg?1446404984') center top repeat-x;
+  background: fixed #0e0e0e url('../images/body.jpg?1358697891') center top repeat-x;
   color: #9c9c9c;
   font-family: "Lato", Helvetica, Arial, sans-serif;
 }
@@ -986,7 +986,8 @@ h6 {
 .wallp__title {
   text-align: center;
   font-size: 14px;
-  margin-bottom: 24px;
+  margin: 0;
+  visibility: hidden;
 }
 .wallp__popup {
   outline: none;
