@@ -981,6 +981,12 @@ h6 {
   padding: 12px 10px;
 }
 
+.user-register-form .form-text,
+.user-login .form-text,
+.user-pass .form-text {
+  max-width: 250px;
+}
+
 .wallpaper-node-form {
   padding: 12px 10px;
 }

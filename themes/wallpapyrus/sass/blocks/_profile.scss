@@ -6,6 +6,14 @@
   padding: $vert-spacing-unit / 2 10px;
 }
 
+.user-register-form,
+.user-login,
+.user-pass {
+  .form-text {
+    max-width: 250px;
+  }
+}
+
 .wallpaper-node-form {
   padding: $vert-spacing-unit / 2 10px;
 
