@@ -14,9 +14,17 @@
   }
 
   .form-text {
+    width: 260px;
     height: 24px;
   }
   .form-select {
     margin-right: 3px;
+  }
+
+  .field-type-image {
+    .form-submit {
+      display: block;
+      margin-top: $vert-spacing-unit / 2;
+    }
   }
 }

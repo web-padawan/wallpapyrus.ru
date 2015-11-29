@@ -988,10 +988,15 @@ h6 {
   display: none;
 }
 .wallpaper-node-form .form-text {
+  width: 260px;
   height: 24px;
 }
 .wallpaper-node-form .form-select {
   margin-right: 3px;
+}
+.wallpaper-node-form .field-type-image .form-submit {
+  display: block;
+  margin-top: 12px;
 }
 
 .user-register-form,
