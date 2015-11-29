@@ -1,4 +1,5 @@
 body {
+  min-width: 320px;
   background: fixed $bg-default image-url('body.jpg') center top repeat-x;
   color: $text-default;
   font-family: $lato;
