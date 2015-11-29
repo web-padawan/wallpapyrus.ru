@@ -10,15 +10,22 @@
 
     .node__submitted {
       position: absolute;
-      top: 60px;
-      left: 17%;
+      top: 56px;
+      left: 6%;
       padding: 3px 6px;
-      font-size: 16px;
+      font-size: 3vw;
       border-bottom-right-radius: 5px;
       color: $text-white;
       text-shadow: 1px 1px 1px $text-shadow;
+      @include breakpoint ($mb_min) {
+        font-size: 16px;
+      }
+      @include breakpoint ($sm_min $sm_max) {
+        left: 17%;
+      }
       @include breakpoint ($md) {
         left: 40px;
+        font-size: 16px;
       }
     }
 
@@ -64,8 +71,10 @@
   &--name-field-rating {
     position: absolute;
     top: 60px;
-    right: 15%;
-
+    right: 2%;
+    @include breakpoint ($sm_min $sm_max) {
+      right: 15%;
+    }
     @include breakpoint ($md) {
       right: 20px;
     }
@@ -74,16 +83,21 @@
   &--name-field-download-count {
     position: absolute;
     top: 87px;
-    left: 17%;
-
-    @include breakpoint ($md) {
-      left: 40px;
-    }
+    left: 6%;
     margin-left: 5px;
     font-size: 16px;
     color: $text-white;
     text-shadow: 1px 1px 1px $text-shadow;
-
+    @include breakpoint ($mb_min) {
+      font-size: 16px;
+    }
+    @include breakpoint ($sm_min $sm_max) {
+      left: 17%;
+    }
+    @include breakpoint ($md) {
+      left: 40px;
+      font-size: 16px;
+    }
     .field__label {
       font-weight: normal;
     }

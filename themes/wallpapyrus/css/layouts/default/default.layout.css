@@ -35,7 +35,7 @@
 .header__left {
   text-align: center;
 }
-@media (min-width: 639px) {
+@media (min-width: 640px) {
   .header__left {
     float: left;
     text-align: left;
@@ -44,7 +44,7 @@
 .header__title {
   margin-top: 1.5em;
 }
-@media (min-width: 639px) {
+@media (min-width: 640px) {
   .header__title {
     padding-left: 0.5rem;
   }
@@ -63,7 +63,7 @@
 .header__slogan {
   margin-bottom: 1.5em;
 }
-@media (min-width: 639px) {
+@media (min-width: 640px) {
   .header__slogan {
     padding-left: 0.66667rem;
     font-size: 18px;

@@ -528,7 +528,7 @@ html {
     margin-right: 0.83333%;
   }
 }
-@media (min-width: 639px) {
+@media (min-width: 640px) {
   .view-search .views-row,
   .view-taxonomy-term .views-row,
   .view-new-wallpapers .views-row {
@@ -702,7 +702,7 @@ h6 {
   line-height: 1.5rem;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 640px) {
   .comments {
     text-align: center;
   }
@@ -777,7 +777,7 @@ h6 {
 .comment-form .form-textarea {
   max-width: 380px;
 }
-@media (max-width: 639px) {
+@media (max-width: 640px) {
   .comment-form .form-textarea {
     margin: 0 auto;
   }
@@ -821,17 +821,28 @@ h6 {
 }
 .node--full .node__submitted {
   position: absolute;
-  top: 60px;
-  left: 17%;
+  top: 56px;
+  left: 6%;
   padding: 3px 6px;
-  font-size: 16px;
+  font-size: 3vw;
   border-bottom-right-radius: 5px;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
 }
+@media (min-width: 480px) {
+  .node--full .node__submitted {
+    font-size: 16px;
+  }
+}
+@media (min-width: 740px) and (max-width: 959px) {
+  .node--full .node__submitted {
+    left: 17%;
+  }
+}
 @media (min-width: 960px) {
   .node--full .node__submitted {
     left: 40px;
+    font-size: 16px;
   }
 }
 .node--full .node__links {
@@ -862,7 +873,12 @@ h6 {
 .field--name-field-rating {
   position: absolute;
   top: 60px;
-  right: 15%;
+  right: 2%;
+}
+@media (min-width: 740px) and (max-width: 959px) {
+  .field--name-field-rating {
+    right: 15%;
+  }
 }
 @media (min-width: 960px) {
   .field--name-field-rating {
@@ -872,15 +888,26 @@ h6 {
 .field--name-field-download-count {
   position: absolute;
   top: 87px;
-  left: 17%;
+  left: 6%;
   margin-left: 5px;
   font-size: 16px;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
 }
+@media (min-width: 480px) {
+  .field--name-field-download-count {
+    font-size: 16px;
+  }
+}
+@media (min-width: 740px) and (max-width: 959px) {
+  .field--name-field-download-count {
+    left: 17%;
+  }
+}
 @media (min-width: 960px) {
   .field--name-field-download-count {
     left: 40px;
+    font-size: 16px;
   }
 }
 .field--name-field-download-count .field__label {
@@ -925,7 +952,7 @@ h6 {
   width: 236px;
   margin: 0 auto 24px auto;
 }
-@media (min-width: 639px) {
+@media (min-width: 640px) {
   .block--views-exp-search-page {
     margin: 48px 4px 0 0;
     float: right;
@@ -945,7 +972,7 @@ h6 {
   margin-bottom: 24px;
   border: 1px solid #464545;
 }
-@media (min-width: 768px) and (max-width: 959px) {
+@media (min-width: 740px) and (max-width: 959px) {
   .l-region--sidebar .block {
     width: 31.66667%;
     float: left;
@@ -1001,14 +1028,14 @@ h6 {
 }
 .wallp--full .wallp__image {
   margin: 12px auto;
-  max-width: 70%;
+  max-width: 95%;
   padding: 7px;
   border: solid 1px #464545;
   text-align: center;
 }
-@media (min-width: 960px) {
+@media (min-width: 740px) and (max-width: 959px) {
   .wallp--full .wallp__image {
-    max-width: 95%;
+    max-width: 70%;
   }
 }
 .wallp-colors {
@@ -1049,7 +1076,7 @@ h6 {
   margin: 12px 0 24px 0;
   overflow: hidden;
 }
-@media (max-width: 639px) {
+@media (max-width: 640px) {
   .wallp-download__row {
     text-align: center;
     margin: 0;
@@ -1061,7 +1088,7 @@ h6 {
 .wallp-download__form--mobile {
   float: right;
 }
-@media (max-width: 639px) {
+@media (max-width: 640px) {
   .wallp-download__form {
     width: 100%;
     clear: both;
@@ -1088,7 +1115,7 @@ h6 {
 .wallp-download__orig {
   float: left;
 }
-@media (max-width: 639px) {
+@media (max-width: 640px) {
   .wallp-download__orig {
     margin-bottom: 12px;
     display: inline-block;
@@ -1112,7 +1139,7 @@ h6 {
   float: left;
   margin-left: 1rem;
 }
-@media (max-width: 639px) {
+@media (max-width: 640px) {
   .wallp-download__user {
     margin-bottom: 12px;
     display: inline-block;
@@ -1142,7 +1169,7 @@ h6 {
 .wallp-download__manual {
   float: right;
 }
-@media (max-width: 639px) {
+@media (max-width: 640px) {
   .wallp-download__manual {
     width: 100%;
     clear: both;

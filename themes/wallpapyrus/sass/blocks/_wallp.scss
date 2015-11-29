@@ -20,9 +20,9 @@
     clear: both;
     .wallp__image {
       margin: $vert-spacing-unit / 2 auto;
-      max-width: 70%;
-      @include breakpoint ($md) {
-        max-width: 95%;
+      max-width: 95%;
+      @include breakpoint ($sm_min $sm_max) {
+        max-width: 70%;
       }
       padding: 7px;
       border: solid 1px $block-border;
