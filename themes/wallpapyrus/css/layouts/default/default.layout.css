@@ -32,16 +32,21 @@
   font-weight: normal;
 }
 
-.header__title {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+.header__left {
   text-align: center;
 }
 @media (min-width: 639px) {
-  .header__title {
+  .header__left {
     float: left;
-    padding-left: 10px;
     text-align: left;
+  }
+}
+.header__title {
+  margin-top: 1.5em;
+}
+@media (min-width: 639px) {
+  .header__title {
+    padding-left: 0.5rem;
   }
 }
 .header__title a {
@@ -54,6 +59,15 @@
 .header__title a:hover, .header__title a:active, .header__title a:focus {
   text-decoration: none;
   color: #d7d7d7;
+}
+.header__slogan {
+  margin-bottom: 1.5em;
+}
+@media (min-width: 639px) {
+  .header__slogan {
+    padding-left: 0.66667rem;
+    font-size: 18px;
+  }
 }
 
 .main__container {

@@ -17,14 +17,17 @@
   &__container {
     @extend %container;
   }
-  &__title {
-    @include leader;
-    @include trailer;
+  &__left {
     text-align: center;
     @include breakpoint($xs_min) {
       float: left;
-      padding-left: 10px;
       text-align: left;
+    }
+  }
+  &__title {
+    @include leader;
+    @include breakpoint($xs_min) {
+      padding-left: $horz-spacing-unit / 2;
     }
     a {
       display: block;
@@ -38,6 +41,13 @@
         text-decoration: none;
         color: $text-lightest;
       }
+    }
+  }
+  &__slogan {
+    @include trailer;
+    @include breakpoint($xs_min) {
+      padding-left: $horz-spacing-unit / 1.5;
+      font-size: 18px;
     }
   }
 }
