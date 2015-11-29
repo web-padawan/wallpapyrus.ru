@@ -60,6 +60,13 @@
         border: solid 1px $link-default;
         text-decoration: none;
       }
+      &--big {
+        display: inline-block;
+        float: none;
+        width: 21.5px;
+        height: 21.5px;
+        margin: 0 1px;
+      }
     }
   }
 
