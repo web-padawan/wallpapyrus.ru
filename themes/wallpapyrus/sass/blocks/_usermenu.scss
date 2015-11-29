@@ -1,0 +1,32 @@
+.usermenu {
+  float: right;
+  margin: 0;
+  list-style-type: none;
+  font-size: 0;
+
+  &__item {
+    display: inline-block;
+  }
+  &__icon {
+    margin: $vert-spacing-unit / 3 $horz-spacing-unit / 2;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+$items: register, login, password, upload, logout;
+
+@each $i in $items {
+  .usermenu__icon--#{$i} {
+    @include si(#{$i});
+    &:hover {
+      @include si(#{$i}-hover);
+    }
+  }
+}

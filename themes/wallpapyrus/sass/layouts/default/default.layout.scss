@@ -8,9 +8,11 @@
 @import '../../abstractions/_block.scss';
 
 .topline {
-  &__container {
-    @extend %container;
-  }
+  height: 40px;
+  margin: 0 auto;
+  background: $topline-bg;
+  border-bottom: 1px solid $topline-border;
+  padding: 0 5px;
 }
 
 .header {

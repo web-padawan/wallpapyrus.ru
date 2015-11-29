@@ -941,7 +941,7 @@ h6 {
   }
 }
 .field--name-field-term-category .field__label {
-  background: url('../images/generated/icons-s2991f51c11.png') 0 0 no-repeat;
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 0 no-repeat;
   width: 24px;
   height: 24px;
   margin-right: 0.5rem;
@@ -958,7 +958,7 @@ h6 {
   }
 }
 .field--name-field-tags .field__label {
-  background: url('../images/generated/icons-s2991f51c11.png') 0 -204px no-repeat;
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -476px no-repeat;
   width: 24px;
   height: 24px;
   margin-right: 0.5rem;
@@ -1040,6 +1040,60 @@ h6 {
   list-style-type: disc;
 }
 
+.usermenu {
+  float: right;
+  margin: 0;
+  list-style-type: none;
+  font-size: 0;
+}
+.usermenu__item {
+  display: inline-block;
+}
+.usermenu__icon {
+  margin: 8px 0.5rem;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+.usermenu__icon:hover, .usermenu__icon:active, .usermenu__icon:focus {
+  text-decoration: none;
+}
+
+.usermenu__icon--register {
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -442px no-repeat;
+}
+.usermenu__icon--register:hover {
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -408px no-repeat;
+}
+
+.usermenu__icon--login {
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -136px no-repeat;
+}
+.usermenu__icon--login:hover {
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -102px no-repeat;
+}
+
+.usermenu__icon--password {
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -340px no-repeat;
+}
+.usermenu__icon--password:hover {
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -306px no-repeat;
+}
+
+.usermenu__icon--upload {
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -544px no-repeat;
+}
+.usermenu__icon--upload:hover {
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -510px no-repeat;
+}
+
+.usermenu__icon--logout {
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -204px no-repeat;
+}
+.usermenu__icon--logout:hover {
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -170px no-repeat;
+}
+
 .view-search,
 .view-taxonomy-term,
 .view-new-wallpapers {
@@ -1103,7 +1157,7 @@ h6 {
 .wallp-colors__label {
   float: left;
   margin-right: 4px;
-  background: url('../images/generated/icons-s2991f51c11.png') 0 -136px no-repeat;
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -272px no-repeat;
   width: 24px;
   height: 24px;
   width: 24px;
@@ -1168,12 +1222,12 @@ h6 {
   height: 24px;
 }
 .wallp-download__icon--desktop {
-  background: url('../images/generated/icons-s2991f51c11.png') 0 -68px no-repeat;
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -68px no-repeat;
   width: 24px;
   height: 24px;
 }
 .wallp-download__icon--mobile {
-  background: url('../images/generated/icons-s2991f51c11.png') 0 -102px no-repeat;
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -238px no-repeat;
   width: 24px;
   height: 24px;
 }
@@ -1192,7 +1246,7 @@ h6 {
   vertical-align: middle;
   width: 24px;
   height: 24px;
-  background: url('../images/generated/icons-s2991f51c11.png') 0 -170px no-repeat;
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -374px no-repeat;
   width: 24px;
   height: 24px;
 }
@@ -1216,7 +1270,7 @@ h6 {
   vertical-align: middle;
   width: 24px;
   height: 24px;
-  background: url('../images/generated/icons-s2991f51c11.png') 0 -238px no-repeat;
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -578px no-repeat;
   width: 24px;
   height: 24px;
 }
@@ -1250,7 +1304,7 @@ h6 {
   vertical-align: middle;
   width: 24px;
   height: 24px;
-  background: url('../images/generated/icons-s2991f51c11.png') 0 -34px no-repeat;
+  background: url('../images/generated/icons-sc7b0e48e31.png') 0 -34px no-repeat;
   width: 24px;
   height: 24px;
 }

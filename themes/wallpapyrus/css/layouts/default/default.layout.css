@@ -12,12 +12,12 @@
   src: url('../../../fonts/alegreya-bold.woff?1447744438') format('woff');
   font-weight: bold;
 }
-.topline__container, .header__container, .nav__container, .main__container, .footer__container {
+.header__container, .nav__container, .main__container, .footer__container {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
 }
-.topline__container:after, .header__container:after, .nav__container:after, .main__container:after, .footer__container:after {
+.header__container:after, .nav__container:after, .main__container:after, .footer__container:after {
   content: " ";
   display: block;
   clear: both;
@@ -30,6 +30,14 @@
   background: #1f1f1f;
   color: #fff;
   font-weight: normal;
+}
+
+.topline {
+  height: 40px;
+  margin: 0 auto;
+  background: #111;
+  border-bottom: 1px solid #464545;
+  padding: 0 5px;
 }
 
 .header__left {
@@ -112,7 +120,7 @@
 }
 
 .footer {
-  border-top: solid 1px #1f1f1f;
+  border-top: solid 1px #464545;
   margin-top: 24px;
   padding: 24px 0;
   font-size: 13px;
