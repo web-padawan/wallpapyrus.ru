@@ -1119,7 +1119,7 @@ h6 {
   text-decoration: none;
 }
 .wallp-colors__thumb:hover, .wallp-colors__thumb:active, .wallp-colors__thumb:focus {
-  border: solid 1px #c3964f;
+  outline: #fff solid 1px;
   text-decoration: none;
 }
 .wallp-colors__thumb--big {

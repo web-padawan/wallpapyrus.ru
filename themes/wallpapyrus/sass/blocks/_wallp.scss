@@ -57,7 +57,7 @@
       &:hover,
       &:active,
       &:focus {
-        border: solid 1px $link-default;
+        outline: #fff solid 1px;
         text-decoration: none;
       }
       &--big {
