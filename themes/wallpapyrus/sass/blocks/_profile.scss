@@ -1,0 +1,22 @@
+.user-profile-category {
+  padding: 0 10px;
+}
+
+.wallpaper-node-form {
+  padding: $vert-spacing-unit / 2 10px;
+
+  .field-name-field-download-count,
+  .field-name-field-term-colors,
+  #edit-preview,
+  .description,
+  .file-icon {
+    display: none;
+  }
+
+  .form-text {
+    height: 24px;
+  }
+  .form-select {
+    margin-right: 3px;
+  }
+}

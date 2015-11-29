@@ -973,6 +973,27 @@ h6 {
   content: "";
 }
 
+.user-profile-category {
+  padding: 0 10px;
+}
+
+.wallpaper-node-form {
+  padding: 12px 10px;
+}
+.wallpaper-node-form .field-name-field-download-count,
+.wallpaper-node-form .field-name-field-term-colors,
+.wallpaper-node-form #edit-preview,
+.wallpaper-node-form .description,
+.wallpaper-node-form .file-icon {
+  display: none;
+}
+.wallpaper-node-form .form-text {
+  height: 24px;
+}
+.wallpaper-node-form .form-select {
+  margin-right: 3px;
+}
+
 .user-register-form,
 .user-login {
   margin-top: 24px;
