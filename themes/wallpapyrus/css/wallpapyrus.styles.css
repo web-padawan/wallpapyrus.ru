@@ -819,6 +819,12 @@ h6 {
 .node--full .node__content {
   padding-top: 16px;
   overflow: hidden;
+  text-align: center;
+}
+@media (min-width: 640px) {
+  .node--full .node__content {
+    text-align: left;
+  }
 }
 .node--full .node__submitted {
   position: absolute;
@@ -835,6 +841,11 @@ h6 {
     font-size: 16px;
   }
 }
+@media (max-width: 639px) {
+  .node--full .node__submitted {
+    top: 86px;
+  }
+}
 @media (min-width: 740px) and (max-width: 959px) {
   .node--full .node__submitted {
     left: 17%;
@@ -848,11 +859,6 @@ h6 {
 }
 .node--full .node__links {
   margin-bottom: 24px;
-}
-.node--full .field {
-  float: left;
-  overflow: hidden;
-  margin-right: 1rem;
 }
 .node--full .field .field__label {
   float: left;
@@ -875,6 +881,12 @@ h6 {
   position: absolute;
   top: 60px;
   right: 2%;
+  margin-right: 1rem;
+}
+@media (max-width: 639px) {
+  .field--name-field-rating {
+    top: 90px;
+  }
 }
 @media (min-width: 740px) and (max-width: 959px) {
   .field--name-field-rating {
@@ -900,6 +912,11 @@ h6 {
     font-size: 16px;
   }
 }
+@media (max-width: 639px) {
+  .field--name-field-download-count {
+    top: 110px;
+  }
+}
 @media (min-width: 740px) and (max-width: 959px) {
   .field--name-field-download-count {
     left: 17%;
@@ -914,7 +931,14 @@ h6 {
   font-weight: normal;
 }
 .field--name-field-term-category {
-  margin-left: 1rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+@media (min-width: 640px) {
+  .field--name-field-term-category {
+    float: left;
+    margin-left: 1rem;
+  }
 }
 .field--name-field-term-category .field__label {
   background: url('../images/generated/icons-s2991f51c11.png') 0 0 no-repeat;
@@ -924,6 +948,14 @@ h6 {
   width: 24px;
   height: 24px;
   color: transparent;
+}
+.field--name-field-tags {
+  display: inline-block;
+}
+@media (min-width: 640px) {
+  .field--name-field-tags {
+    float: left;
+  }
 }
 .field--name-field-tags .field__label {
   background: url('../images/generated/icons-s2991f51c11.png') 0 -204px no-repeat;
@@ -1039,8 +1071,15 @@ h6 {
   }
 }
 .wallp-colors {
-  float: right;
-  margin-right: 1rem;
+  overflow: hidden;
+  max-width: 140px;
+  margin: 0 auto;
+}
+@media (min-width: 640px) {
+  .wallp-colors {
+    float: right;
+    margin: 0 1rem;
+  }
 }
 .wallp-colors__label {
   float: left;

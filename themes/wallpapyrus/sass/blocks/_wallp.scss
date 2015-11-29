@@ -21,7 +21,7 @@
     .wallp__image {
       margin: $vert-spacing-unit / 2 auto;
       max-width: 95%;
-      @include breakpoint ($sm_min $sm_max) {
+      @include breakpoint($sm_min $sm_max) {
         max-width: 70%;
       }
       padding: 7px;
@@ -31,9 +31,13 @@
   }
 
   &-colors {
-    float: right;
-    margin-right: $horz-spacing-unit;
-
+    overflow: hidden;
+    max-width: 140px;
+    margin: 0 auto;
+    @include breakpoint($xs_min) {
+      float: right;
+      margin: 0 $horz-spacing-unit;
+    }
     &__label {
       float: left;
       margin-right: 4px;

@@ -6,6 +6,10 @@
     .node__content {
       padding-top: $vert-spacing-unit / 1.5;
       overflow: hidden;
+      text-align: center;
+      @include breakpoint($xs_min) {
+        text-align: left;
+      }
     }
 
     .node__submitted {
@@ -17,13 +21,16 @@
       border-bottom-right-radius: 5px;
       color: $text-white;
       text-shadow: 1px 1px 1px $text-shadow;
-      @include breakpoint ($mb_min) {
+      @include breakpoint($mb_min) {
         font-size: 16px;
       }
-      @include breakpoint ($sm_min $sm_max) {
+      @include breakpoint(max-width $mb_max) {
+        top: 86px;
+      }
+      @include breakpoint($sm_min $sm_max) {
         left: 17%;
       }
-      @include breakpoint ($md) {
+      @include breakpoint($md) {
         left: 40px;
         font-size: 16px;
       }
@@ -34,9 +41,6 @@
     }
 
     .field {
-      float: left;
-      overflow: hidden;
-      margin-right: $horz-spacing-unit;
       .field__label {
         float: left;
       }
@@ -72,10 +76,14 @@
     position: absolute;
     top: 60px;
     right: 2%;
-    @include breakpoint ($sm_min $sm_max) {
+    margin-right: $horz-spacing-unit;
+    @include breakpoint(max-width $mb_max) {
+      top: 90px;
+    }
+    @include breakpoint($sm_min $sm_max) {
       right: 15%;
     }
-    @include breakpoint ($md) {
+    @include breakpoint($md) {
       right: 20px;
     }
   }
@@ -88,13 +96,16 @@
     font-size: 12px;
     color: $text-white;
     text-shadow: 1px 1px 1px $text-shadow;
-    @include breakpoint ($mb_min) {
+    @include breakpoint($mb_min) {
       font-size: 16px;
     }
-    @include breakpoint ($sm_min $sm_max) {
+    @include breakpoint(max-width $mb_max) {
+      top: 110px;
+    }
+    @include breakpoint($sm_min $sm_max) {
       left: 17%;
     }
-    @include breakpoint ($md) {
+    @include breakpoint($md) {
       left: 40px;
     }
     .field__label {
@@ -103,7 +114,12 @@
   }
 
   &--name-field-term-category {
-    margin-left: $horz-spacing-unit;
+    display: inline-block;
+    margin-right: $horz-spacing-unit;
+    @include breakpoint($xs_min) {
+      float: left;
+      margin-left: $horz-spacing-unit;
+    }
     .field__label {
       @include s('category');
       margin-right: $horz-spacing-unit / 2;
@@ -114,6 +130,10 @@
   }
 
   &--name-field-tags {
+    display: inline-block;
+    @include breakpoint($xs_min) {
+      float: left;
+    }
     .field__label {
       @include s('tags');
       margin-right: $horz-spacing-unit / 2;
