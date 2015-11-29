@@ -8,3 +8,14 @@ function wallpapyrus_custom_form_alter(&$form, &$form_state, $form_id) {
     $form['text']['#attributes'] = array('placeholder' => array('Поиск обоев'));
   }
 }
+
+/**
+ * Implements hook_user_login().
+ */
+function wallpapyrus_custom_user_login(&$edit, $account) {
+  if (!isset($_POST['form_id']) || $_POST['form_id'] != 'user_pass_reset') {
+    if(in_array('authenticated user', $account->roles)) {
+      $_GET['destination'] = '/';
+    }
+  }
+}
