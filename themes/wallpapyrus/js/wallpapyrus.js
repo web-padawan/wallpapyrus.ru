@@ -13,11 +13,14 @@
     $category.attr('title', $category.text());
 
     var $tags = $('.field--name-field-tags'),
-        terms = Array.prototype.slice.call($tags.find('.field__item')).map(function(elem) {
-          return elem.innerText;
-        });
+        terms = $tags.find('.field__item'),
+        tArr = [];
 
-    $tags.attr('title', 'Теги: '+ terms.join(', '));
+    for (var i = 0; i< terms.length; i++) {
+      tArr.push(terms[i].innerText);
+    };
+
+    $tags.attr('title', 'Теги: '+ tArr.join(', '));
 
     var $colors = $('.wallp-colors__label');
     $colors.attr('title', 'Основные цвета');
