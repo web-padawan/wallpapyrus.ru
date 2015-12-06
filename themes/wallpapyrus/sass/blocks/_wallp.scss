@@ -200,4 +200,12 @@
       }
     }
   }
+
+  &__image {
+    > img {
+      width: auto;
+      height: auto;
+      min-height: auto;
+    }
+  }
 }

@@ -1,17 +1,34 @@
 .block--views-exp-search-page {
-  width: 236px;
-  margin: 0 auto $vert-spacing-unit auto;
+  text-align: center;
+  margin-bottom: $vert-spacing-unit;
+  height: 30px;
   @include breakpoint($xs_min) {
     margin: $vert-spacing-unit * 2 4px 0 0;
     float: right;
+    text-align: right;
+  }
+  .views-exposed-form {
+    display: inline-block;
+  }
+  .views-exposed-widgets {
+    line-height: 1;
   }
   .views-exposed-widget {
+    height: 28px;
+    float: left;
     padding: 0;
+    margin: 0;
     .form-text {
-      width: 170px;
+      max-width: 150px;
+      float: none;
     }
     .form-submit {
-      margin: 0 0 0 10px;
+      margin: 0;
+      display: inline-block;
+      vertical-align: top;
     }
+  }
+  .views-submit-button {
+    margin-left: 5px;
   }
 }

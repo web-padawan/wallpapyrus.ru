@@ -21,21 +21,21 @@ video {
   margin: 0 5px;
   width: 25px;
   height: 25px;
-  background: url('../images/loader.gif?1447445965');
+  background: url('../images/loader.gif?1447410541');
 }
 
 @font-face {
   font-family: "Lato";
-  src: url('../fonts/lato-regular.woff?1447445965') format('woff');
+  src: url('../fonts/lato-regular.woff?1447308188') format('woff');
 }
 @font-face {
   font-family: "Lato";
-  src: url('../fonts/lato-bold.woff?1447445965') format('woff');
+  src: url('../fonts/lato-bold.woff?1447308188') format('woff');
   font-weight: bold;
 }
 @font-face {
   font-family: "Alegreya";
-  src: url('../fonts/alegreya-bold.woff?1447790038') format('woff');
+  src: url('../fonts/alegreya-bold.woff?1447744438') format('woff');
   font-weight: bold;
 }
 @media (max-width: 1024px) {
@@ -551,7 +551,7 @@ html {
 
 body {
   min-width: 320px;
-  background: fixed #0e0e0e url('../images/body.jpg?1446404984') center top repeat-x;
+  background: fixed #0e0e0e url('../images/body.jpg?1358697891') center top repeat-x;
   color: #9c9c9c;
   font-family: "Lato", Helvetica, Arial, sans-serif;
 }
@@ -1025,23 +1025,40 @@ h6 {
 }
 
 .block--views-exp-search-page {
-  width: 236px;
-  margin: 0 auto 24px auto;
+  text-align: center;
+  margin-bottom: 24px;
+  height: 30px;
 }
 @media (min-width: 640px) {
   .block--views-exp-search-page {
     margin: 48px 4px 0 0;
     float: right;
+    text-align: right;
   }
 }
+.block--views-exp-search-page .views-exposed-form {
+  display: inline-block;
+}
+.block--views-exp-search-page .views-exposed-widgets {
+  line-height: 1;
+}
 .block--views-exp-search-page .views-exposed-widget {
+  height: 28px;
+  float: left;
   padding: 0;
+  margin: 0;
 }
 .block--views-exp-search-page .views-exposed-widget .form-text {
-  width: 170px;
+  max-width: 150px;
+  float: none;
 }
 .block--views-exp-search-page .views-exposed-widget .form-submit {
-  margin: 0 0 0 10px;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+.block--views-exp-search-page .views-submit-button {
+  margin-left: 5px;
 }
 
 .l-region--sidebar .block {
@@ -1358,4 +1375,9 @@ h6 {
 .wallp-download__manual .form-text {
   width: 64px;
   font-size: 13px;
+}
+.wallp__image > img {
+  width: auto;
+  height: auto;
+  min-height: auto;
 }
