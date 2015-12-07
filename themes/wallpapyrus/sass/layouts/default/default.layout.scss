@@ -8,8 +8,9 @@
 @import '../../abstractions/_block.scss';
 
 .topline {
-  height: 40px;
+  height: 42px;
   margin: 0 auto;
+  overflow: hidden;
   background: $topline-bg;
   border-bottom: 1px solid $topline-border;
   padding: 0 5px;

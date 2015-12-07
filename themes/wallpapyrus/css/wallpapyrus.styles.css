@@ -1101,6 +1101,16 @@ h6 {
   list-style-type: disc;
 }
 
+.social_login {
+  margin: 0 !important;
+  position: relative;
+  top: 3px;
+}
+
+iframe[id^="oa_social_login_frame"] {
+  position: absolute;
+}
+
 .usermenu {
   float: right;
   margin: 0;
