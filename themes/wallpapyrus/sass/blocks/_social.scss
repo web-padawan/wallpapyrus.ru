@@ -7,3 +7,14 @@
 iframe[id^="oa_social_login_frame"] {
   position: absolute;
 }
+
+#edit-social-login-core-create-account,
+#edit-social-login-core-link-account {
+  display: none;
+}
+
+.block--social-login-widget {
+  max-width: 170px;
+  height: 40px;
+  overflow: hidden;
+}
