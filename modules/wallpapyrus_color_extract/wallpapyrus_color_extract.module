@@ -1,10 +1,13 @@
 <?php
 
 require 'vendor/autoload.php';
-require 'lib/Color.php';
-require 'lib/Palette.php';
 
-use League\ColorExtractor\Client as ColorExtractor;
+require 'lib/Color.php';
+require 'lib/SafePalette.php';
+
+// use League\ColorExtractor\Color;
+use League\ColorExtractor\ColorExtractor;
+use League\ColorExtractor\Palette;
 
 /**
  * Implements hook_node_presave().
@@ -17,18 +20,22 @@ function wallpapyrus_color_extract_node_presave($node) {
 
   // load image file
   $image_file = file_load($fid);
-  $url = file_create_url($image_file->uri);
+  $url = drupal_realpath($image_file->uri);
 
   if (!empty($url)) {
 
-    // extract color data
-    $client = new ColorExtractor;
-    $image = $client->loadJpeg($url);
-    $data = $image->extract(5);
+    // get safe colors palette
+    $palette = Palette::fromFilename($url);
+
+    // an extractor is built from a palette
+    $extractor = new ColorExtractor($palette);
+
+    // it defines an extract method which return the most representative colors
+    $data = $palette->getMostUsedColors(5);
 
     // get safe colors palette
     $color = new Color;
-    $palette = new Palette;
+    $palette = new SafePalette;
     $safe = $palette->getSafe();
 
     $i = 0;

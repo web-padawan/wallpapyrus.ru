@@ -1,6 +1,6 @@
 <?php
 
-class Palette {
+class SafePalette {
 
   protected $palette = array(
     0xFFFFCC, 0xFFFF99, 0xFFFF66, 0xFFFF33, 0xFFFF00, 0xCCCC00,
